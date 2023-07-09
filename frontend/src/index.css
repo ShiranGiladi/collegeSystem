@@ -1,0 +1,768 @@
+/*********** switch component **********/
+#light .icons-switch{
+  color: #6c757d
+}
+
+#dark .icons-switch{
+  color: white
+}
+
+.sun{
+  margin-left: 10%;
+  margin-right: 8px;
+}
+
+#dark #custom-switch {
+  background-color: #DDB8CB;
+  border-color: #DDB8CB;
+  color: white;
+}
+/*********************************/
+
+/*********** navbar component **********/
+.grad{
+  margin-bottom: 4%;
+  margin-right: 0.5rem;
+}
+
+.navbarLinks{
+  text-decoration: none;
+}
+
+#light .navbarLinks{
+  color: #6c757d;
+}
+
+#light .navbarLinks:hover{
+  color: black;
+}
+
+#dark .navbarLinks{
+  color: white;
+}
+
+#dark .navbarLinks:hover{
+  color: lightblue;
+}
+
+.mainHeader{
+  text-decoration: none;
+}
+
+#light .mainHeader{
+  color: #6c757d;
+}
+
+#light .mainHeader:hover{
+  color: #5c636a;
+}
+
+#dark .mainHeader{
+  color: white;
+}
+
+#dark .mainHeader:hover{
+  color: lightblue;
+}
+/*********************************/
+
+/*********** login page **********/
+.background-login{
+  background-position: right;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+#light .background-login{
+  background-image: url("./images/login-background.JPG");
+  background-color: rgba(255, 249, 244);
+}
+
+#dark .background-login{
+  background-image: url("./images/dark-login-background.JPG");
+  background-color: rgba(14, 42, 71);
+}
+
+.container-login{
+  width: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.login .display-6{
+  padding-top: 40%;
+  font-weight: 400;
+  margin: auto;
+  text-align: center;
+  color:  #6c757d;
+}
+
+#dark .login .display-6 {
+  color: white;
+}
+
+.form .field{
+  position: relative;
+  height: 50px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.field input{
+  height: 100%;
+  width: 100%;
+}
+
+.field button{
+  width: auto;
+  margin: auto;
+  display: grid;
+}
+
+.form-link{
+  text-align: center;
+  margin-top: 10%;
+}
+
+.form a{
+  text-decoration: none;
+  color:  #6c757d;
+}
+
+#dark .form a{
+  text-decoration: none;
+  color:  white;
+}
+
+.form a:hover{
+  text-decoration: underline;
+}
+
+.error-text .error-icon{
+  margin-right: 6px;
+  margin-bottom: 3px;
+}
+/*********************************/
+
+/*********** select page **********/
+#light .background-select{
+  background-image: url("./images/select-background.JPG");
+  background-size: 100%;
+}
+
+#dark .background-select{
+  background-image: url("./images/dark-select-background.JPG");
+  background-size: 100%;
+}
+
+.select .container-select{
+  width: 250px;
+  margin: auto;
+}
+
+.select .form-select{
+  margin-bottom: 5%;
+}
+
+.select .btn-display{
+  width: auto;
+  margin: auto;
+  margin-top: 2%;
+  display: flex;
+}
+/*********************************/
+
+/*********** courses page **********/
+#light .background-courses{
+  background-image: url("./images/courses-background.JPG");
+  background-size: 100%;  
+}
+
+#dark .background-courses{
+  background-image: url("./images/dark-courses-background.JPG");
+  background-size: 100%;  
+}
+
+.courses .container-courses{
+  max-width: 900px;
+}
+
+.courses .col-6{
+  margin: 7px;
+  width: 280px;
+  height: 180px;
+  border-width: 3px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+#light .courses .col-6{
+  color: black;
+}
+
+#light .courses .col-6:hover{
+  color: #404549;
+}
+
+#dark .courses .col-6{
+  color: white;
+}
+
+#dark .courses .col-6:hover{
+  color: lightblue
+}
+
+.courses .row{
+  display: inline-block;
+}
+
+.courses .btnGoBack{
+  margin-top: 40px;
+}
+/*********************************/
+
+/*********** grades page **********/
+#light .background-grades{
+  background-image: url("./images/grades-background.JPG");
+  background-size: 100%; 
+}
+
+#dark .background-grades{
+  background-image: url("./images/dark-grades-background.JPG");
+  background-size: 100%; 
+}
+
+.grades .student-table{
+  min-width: 48%;
+  max-width: 480px;
+  margin: auto;
+}
+/*********************************/
+
+/********** stats page **********/
+#light .background-stats{
+  background-image: url("./images/stats-background.JPG");
+  background-position: right;
+}
+
+#dark .background-stats{
+  background-image: url("./images/dark-stats-background.JPG");
+  background-position: left;
+  background-size: cover; 
+}
+
+.stats .chart-container{
+  margin: auto;
+  height: 60vh;
+  width: 100vw; 
+  display: grid;
+  justify-content: center;
+  padding-top: 2%;
+}
+
+.stats .stats-info{
+  display: flex;
+  justify-content: center;
+}
+
+#dark .stats .stats-info{
+  color: white;
+}
+
+.stats .stats-mdn, .stats-avg{
+  padding-right: 7%;
+}
+/*********************************/
+
+/*********** gradesTeachers page **********/
+.grades-teachers .teacher-table{
+  min-width: 50%;
+  max-width: 480px; 
+  margin: auto;
+}
+
+.grades-teachers .container-grades-teacher{
+  width: 40%;
+  margin: auto;
+  padding-bottom: 2%;
+  justify-content: end;
+  display: grid;
+}
+/*********************************/
+
+/*********** new assignment page + update page + upload greades page **********/
+.new-task .container-new-task{
+  max-width: 350px;
+}
+
+.new-task .label-grades{
+  margin-top: 5%;
+  margin-bottom: 2%;
+  font-weight: bold;
+}
+
+.new-task .label-date{
+  font-weight: bold;
+}
+
+#dark .new-task .label-grades, #dark .new-task .label-date{
+  color: white;
+}
+
+.new-task .submit-task{
+  margin-top: 5%;
+  margin-left: 40%;
+  margin-bottom: 5%;
+}
+
+#gradesOneLabel{
+  margin-top: 6%;
+  margin-bottom: 10%;
+  font-size: 40px;
+}
+
+#dark #gradesOneLabel{
+  color: white;
+}
+
+#oldGrade{
+  margin-left: 36%;
+  text-align: center;
+  width: 100px;
+  margin-top: 3%;
+}
+
+.new-task .file-error{
+  margin-top: 5%;
+}
+
+.new-task .update-dalete{
+  margin: auto;
+  justify-content: center;
+  display: flex;
+  margin-top: 8%;
+  margin-bottom: 5%;
+}
+
+.new-task .btn-danger{
+  margin-left: 5%;
+}
+/*********************************/
+
+/*********** profile page **********/
+.container-profile{
+  margin-top: 4%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-photo{
+  max-width: 180px;;
+}
+
+.pencil-icon {
+  margin: auto;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.check-icon{
+  margin: auto;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.cancel-icon{
+  margin: auto;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+#light .pencil-icon, #light .check-icon, #light .cancel-icon{
+  color: #6c757d;
+}
+
+#dark .pencil-icon, #dark .check-icon, #dark .cancel-icon{
+  color: white;
+}
+
+#dark .profile .form-control{
+  border-color: #607287;
+}
+
+.container-profile {
+  display: grid;
+  grid-template-columns: auto 1fr; 
+  grid-column-gap: 20px; 
+}
+
+.photo-container {
+  grid-column: 1; 
+}
+
+.info-container {
+  grid-column: 2; 
+}
+
+.input-container {
+  margin-bottom: 20px; 
+  max-width: 300px;
+}
+
+.input-container .form-control {
+  margin-right: 10px; 
+}
+
+#dark .profile .title{
+  color: white;
+}
+/*********************************/
+
+/***********settings page **********/
+.custom-container {
+  border: 2px solid #ced4da;
+  border-radius: 0.25rem;
+  padding: 1rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+.help-container{
+    width: 400px;
+}
+
+.submit-help{
+  margin-top: 2%;
+}
+
+#dark .settings .form-check-label, #dark .settings .title{
+  color: white;
+}
+
+#light .background-settings{
+  background-image: url("./images/grades-background.JPG");
+  background-size: cover; 
+}
+
+#dark .background-settings{
+  background-image: url("./images/dark-grades-background.JPG");
+  background-size: cover; 
+}
+/*********************************/
+
+/*********** 404 page **********/
+.background-not-found{
+  background-position: right;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+#light .background-not-found{
+  background-image: url("./images/login-background.JPG");
+  background-color: rgba(255, 249, 244);
+}
+
+#dark .background-not-found{
+  background-image: url("./images/dark-login-background.JPG");
+  background-color: rgba(14, 42, 71);
+}
+
+.container-not-found{
+  padding-top: 15%;
+}
+
+#dark .container-not-found .text-center{
+  color: white;
+}
+/*********************************/
+
+/*********** Admin Home page **********/
+.AdminHome .btnAdmin{
+  width: 300px;
+  display: grid;
+}
+
+.AdminHome .buttonsAdmin{
+  width: 300px;
+  height: 70px;
+  margin-bottom: 3%;
+  font-weight: bold;
+}
+
+#light .AdminHome .buttonsAdmin{
+  color: black;
+}
+
+#light .AdminHome .buttonsAdmin:hover{
+  color: #404549;
+}
+
+#dark .AdminHome .buttonsAdmin{
+  color: white;
+}
+
+#dark .AdminHome .buttonsAdmin:hover{
+  color: lightblue;
+}
+/*********************************/
+
+/*********** Add Users page + Edit Users page **********/
+.add-users .container-new-user{
+  width: 380px;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-users .user-type{
+  display: flex;
+  align-items: center;
+}
+
+.add-users .form-select{
+  width: 200px;
+}
+
+.add-users .container-all-info{
+  display: flex;
+  margin: 0%;
+}
+
+.add-users .form-control{
+  width: 195px;
+}
+
+.add-users .submit-new-user{
+  margin-top: 10%;
+  margin-left: 40%;
+}
+
+.add-users .label-info{
+  font-weight: bold;
+  margin-top: 12%;
+}
+
+.add-users .label-user-type{
+  font-weight: bold;
+  margin-left: 50px;
+  margin-right: 10px;
+}
+
+.add-users .update-dalete {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8%;
+}
+
+.add-users .userID-input{
+  width: 200px;
+}
+
+.add-users .left-side-info{
+  margin-right: 5%;
+}
+/*********************************/
+
+/*********** Add Course page + Add Admin page + Edit Adin page **********/
+.add-course .container-add-course{
+  width: 400px;
+}
+
+.add-course .user-type{
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.add-course .label-user-type{
+  font-weight: bold;
+  margin-right: 10px;
+  width: 120px;
+}
+
+.add-course .form-select{
+  width: 200px;
+}
+
+.add-course .label-info{
+  font-weight: bold;
+  width: 120px;
+  margin-right: 10px;
+}
+
+.add-course .label-new-admin{
+  font-weight: bold;
+  width: 140px;
+  margin-right: 10px;
+}
+
+.add-course .form-control{
+  width: 200px;
+}
+
+.add-course .add-btn{
+  margin-top: 10%;
+  margin-left: 40%;
+}
+
+.add-course .label-input-div{
+  display: flex;
+  margin-top: 4%;
+  align-items: center;
+}
+/*********************************/
+
+/*********** delete Course page **********/
+.delete-course .container-delete-course{
+  max-width: 750px;
+}
+
+.delete-course .user-ID{
+  display: flex;
+  justify-content: center;
+}
+
+.delete-course .userID-input{
+  width: 200px;
+}
+
+.delete-course .label-user-ID{
+  font-weight: bold;
+  margin-right: 10px;
+  margin-top: 1%;
+}
+
+.delete-course .delete-course-from-lecturer, .delete-course .delete-course-from-student{
+  margin-top: 5%;
+  position: relative;
+}
+
+.delete-course .btn-danger{
+  position: absolute;
+  right: 0;
+  margin-top: 10px;
+}
+/*********************************/
+
+/***** appears in more than one page *****/
+#light .background{
+  background-color: rgba(255, 249, 244);
+  background-repeat: no-repeat; 
+  height: 100vh;
+}
+
+#dark .background{
+  background-color: rgba(14, 42, 71);
+  background-repeat: no-repeat; 
+  height: 100vh;
+}
+
+.select .display-5, .courses .display-5, .grades .display-5, .stats .display-5, .add-users .display-5, .delete-course .display-5,
+.grades-teachers .display-5, .new-task .display-5, .settings .display-5, .AdminHome .display-5, .add-course .display-5{
+  padding-bottom: 3%;
+  font-weight: 400;
+  margin: auto;
+  text-align: center;
+}
+
+.grades .back-btn, .stats .back-btn, .grades-teachers .back-btn, .new-task .back-btn, 
+.add-users .back-btn, .add-course .back-btn, .delete-course .back-btn{
+  border-radius: 50%;
+  height: 8%;
+  margin-left: 2%;
+  bottom: 3%;
+  position: absolute;
+}
+
+.grades .nextPrevButton, .grades-teachers .nextPrevButton, .delete-course .nextPrevButton{
+  margin: auto;
+  justify-content: center;
+  display: flex;
+}
+
+.grades .prevbtn, .grades-teachers .prevbtn, .delete-course .prevbtn{
+  margin-right: 2%;
+}
+
+.error-text{
+  text-align: center;
+  justify-content: center;
+}
+/****************************************************/
+
+/******************* Dark Mode - more than one page *******************/
+#dark .custom-table tbody tr:nth-of-type(odd) td {
+  background-color: #0E2A47;
+}
+
+#dark .custom-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#dark .custom-table thead th {
+  background-color: #214468;
+  color: #fff;
+  border: 1px solid #dee2e6;
+}
+
+#dark .custom-table tbody td {
+  background-color: #214468;
+  color: #fff;
+  border: 1px solid #dee2e6;
+}
+
+#dark .custom-table tbody tr:nth-of-type(odd) td {
+  background-color: #0E2A47;
+}
+
+#dark .custom-table tbody tr:hover td {
+  background-color: #607287;
+}
+
+#dark .error-text{
+  color: white;
+}
+
+#dark .btn{
+  background-color: #E9CCDB;
+  border-color: #E9CCDB;
+  color: #0E2A47;
+}
+
+#dark .btn:hover{
+  background-color: #DAB3C7;
+  border-color: #DAB3C7;
+}
+
+#dark .btn-danger{
+  background-color: var(--bs-danger);
+  border-color: var(--bs-danger);
+  color: white;
+}
+#dark .btn-danger:hover{
+  background-color: #BB2D3B;
+  border-color: #BB2D3B;
+}
+
+#dark .display-5{
+  color: white;
+}
+
+#dark .form-select {
+  background-color: #607287; 
+  color: white; 
+  border-color: #0E2A47; 
+}
+
+#dark .form-control {
+  background-color: #607287; 
+  color: white; 
+  border-color: #0E2A47; 
+}
+
+#dark .form-control::placeholder, #dark .form-label{
+  color: white;
+}
