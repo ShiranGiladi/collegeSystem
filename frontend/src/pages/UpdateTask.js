@@ -28,7 +28,7 @@ const UpdateAssignment = () => {
       setPercentage(rowData.percentage);
       setDueDate(rowData.dueDate);
     }
-  }, []);
+  }, [navigate, user]);
 
   const handleUpdateClick = async () => {
     const response = await fetch('/api/user/updateTask', {
