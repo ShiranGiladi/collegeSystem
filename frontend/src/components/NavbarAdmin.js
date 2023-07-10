@@ -5,7 +5,6 @@ import { MortarboardFill } from "react-bootstrap-icons";
 import { useLogout } from '../hooks/useLogout'
 
 const NavigationAdmin = () => {
-  const user = JSON.parse(localStorage.getItem('user'));
 
   const { logout } = useLogout()
   const handleLogOutClick = () => {
