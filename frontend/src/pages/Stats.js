@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Button } from 'react-bootstrap'
-import Chart from "chart.js/auto";
+// import Chart from "chart.js/auto";
 import { Bar } from "react-chartjs-2";
 import { useParams, useNavigate } from 'react-router-dom';
-import { Display } from "react-bootstrap-icons";
+// import { Display } from "react-bootstrap-icons";
 
 const BarChart = () => {
   const { year, semester, courseName, courseCode, assignmentName } = useParams();
@@ -32,7 +32,7 @@ const BarChart = () => {
     }
 
     fetchCourses()
-  }, [])
+  }, [assignmentName, courseName, navigate, semester, user, year])
   
   /** array to hold the info for the distribution chart */
   const distribution = [0, 0, 0, 0, 0, 0];

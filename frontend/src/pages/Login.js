@@ -3,7 +3,7 @@ import { Button, Modal, Form } from 'react-bootstrap';
 import { MortarboardFill, ExclamationCircle } from "react-bootstrap-icons";
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import { useLogin } from '../hooks/useLogin'
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { ThemeContext } from '../App'; 
 
 const LoginForm = () => {
@@ -81,7 +81,7 @@ const LoginForm = () => {
             </div>
 
             <div className="form-link">
-              <a className="link" onClick={handleShow}>Forgot Password?</a>
+              <Link className="link" onClick={handleShow}>Forgot Password?</Link>
             </div>
 
             <div className="field button-field">

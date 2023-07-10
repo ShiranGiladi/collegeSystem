@@ -39,7 +39,7 @@ function MyCoursesPage() {
     }
 
     fetchCourses()
-  }, [navigate, user])
+  }, [navigate, user, semester, year])
 
   const displayCourses = () => {
     if (courseDetails === null) {

@@ -23,7 +23,6 @@ import AddAdmin from './pages/AddAdmin';
 import EditAdmin from './pages/EditAdmin';
 import NotFound from './pages/NotFound';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
-import { useAuthContext } from './hooks/useAuthContext';
 import { createContext, useState } from 'react';
 
 export const ThemeContext = createContext(null);

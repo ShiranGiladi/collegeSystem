@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Button, Container } from 'react-bootstrap';
 import { useParams, useNavigate } from 'react-router-dom';
 import 'flatpickr/dist/flatpickr.min.css';
-import { Display } from 'react-bootstrap-icons';
+// import { Display } from 'react-bootstrap-icons';
 
 const UploadGrades = () => {
   const [studentId, setStudentId] = useState('');
@@ -19,7 +19,7 @@ const UploadGrades = () => {
       navigate('/PageToFound'); // Redirect the user to 404 page
       return;
     }
-  }, [])
+  }, [navigate, user])
 
   const handleGoButtonClick = async () => {
     const response = await fetch(`/api/lecturer/studentGrade/${courseName}/${courseCode}/${name}/${studentId}`);

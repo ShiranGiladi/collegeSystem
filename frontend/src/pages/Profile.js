@@ -106,7 +106,7 @@ const Profile = () => {
       <section>
         <div className="container container-profile">
           <div className="photo-container">
-            <img src={blankProfileImage} className="profile-photo" alt="Profile Photo" />
+            <img src={blankProfileImage} className="profile-photo" alt="" />
           </div>
           <div className="info-container">
             <h4 className="student-name title">{details.name}</h4>

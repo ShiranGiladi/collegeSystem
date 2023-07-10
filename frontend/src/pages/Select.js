@@ -13,7 +13,7 @@ const CourseSelection = () => {
       navigate('/PageToFound'); // Redirect the user to 404 page
       return;
     }
-  }, [])
+  }, [navigate, user])
 
   const handleDisplayClick = () => {
     navigate(`/courses/${year}/${semester}`);

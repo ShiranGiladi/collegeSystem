@@ -10,7 +10,7 @@ function SettingsPage() {
       navigate('/PageToFound'); // Redirect the user to 404 page
       return;
     }
-  }, [])
+  }, [navigate, user])
 
   return (
     <Container className="settings mt-4">
