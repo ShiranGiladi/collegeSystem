@@ -2,6 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Navigation from './components/Navbar';
 import NavigationAdmin from './components/NavbarAdmin';
 import Switch from './components/Switch';
+import Placeholder from './components/Placeholder';
 import LoginForm from './pages/Login';
 import CourseSelection from './pages/Select';
 import MyCoursesPage from './pages/Courses';
@@ -47,7 +48,6 @@ function App() {
     setTheme((currentTheme) => (currentTheme === "light" ? "dark" : "light"));
   };
   
-
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
       <div className="App" id={theme}>
@@ -58,10 +58,12 @@ function App() {
                 path="/"
                 element={<Navigate to="/login" />}
               />
+              
               <Route
                 path='/login'
                 element={
                   <div className="background-login"> 
+                    <Placeholder />
                     <Switch className="switch-no-nav"/>
                     <LoginForm />
                   </div>
@@ -259,6 +261,7 @@ function App() {
               exact path='*'
               element={
                 <div className="background-not-found">
+                  <Placeholder />
                   <Switch />
                   <NotFound />
                 </div>

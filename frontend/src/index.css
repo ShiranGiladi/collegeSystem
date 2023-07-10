@@ -135,7 +135,7 @@
   color:  white;
 }
 
-.form a:hover{
+.form a:hover, #dark .form a:hover{
   text-decoration: underline;
 }
 
