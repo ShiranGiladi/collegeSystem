@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Button, Container } from 'react-bootstrap';
-import BootstrapTable from 'react-bootstrap-table-next';
-import 'react-bootstrap-table-next/dist/react-bootstrap-table2.min.css';
+// import BootstrapTable from 'react-bootstrap-table-next';
+// import 'react-bootstrap-table-next/dist/react-bootstrap-table2.min.css';
 import { Link, useNavigate } from 'react-router-dom';
 
 const DeleteCourse = () => {
@@ -167,7 +167,7 @@ const DeleteCourse = () => {
 
         {showLecturerTable && (
           <div className='delete-course-from-lecturer'>
-            <BootstrapTable
+            {/* <BootstrapTable
               classes='custom-table'
               keyField="courseName"
               data={displayLecturers}
@@ -183,7 +183,7 @@ const DeleteCourse = () => {
               sortIndicator
               bootstrap4
               headerClasses="table-header"  
-            />
+            /> */}
             <Container className="nextPrevButton">
               <Button
                 onClick={() => setCurrentPage(currentPage - 1)}
@@ -200,7 +200,7 @@ const DeleteCourse = () => {
 
         {showStudentTable && (
           <div className='delete-course-from-student'>
-            <BootstrapTable
+            {/* <BootstrapTable
               classes='custom-table'
               keyField="courseName"
               data={displayStudents}
@@ -216,7 +216,7 @@ const DeleteCourse = () => {
               sortIndicator
               bootstrap4
               headerClasses="table-header"  
-            />
+            /> */}
             <Container className="nextPrevButton">
               <Button
                 onClick={() => setCurrentPage(currentPage - 1)}

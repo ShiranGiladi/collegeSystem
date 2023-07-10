@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Table, Button, Container } from 'react-bootstrap';
 import { useParams, useNavigate } from 'react-router-dom';
-import BootstrapTable from 'react-bootstrap-table-next';
-import 'react-bootstrap-table-next/dist/react-bootstrap-table2.min.css';
+// import BootstrapTable from 'react-bootstrap-table-next';
+// import 'react-bootstrap-table-next/dist/react-bootstrap-table2.min.css';
 
 const GradesPage = () => {
   const [sortField, setSortField] = useState('');
@@ -83,7 +83,7 @@ const GradesPage = () => {
   return (
     <section className='grades'>
       <h1 className="display-5">Grades for {courseName} Course ({courseCode})</h1>
-      <BootstrapTable
+      {/* <BootstrapTable
         classes='custom-table'
         keyField="assignmentName"
         data={displayGrades}
@@ -100,7 +100,7 @@ const GradesPage = () => {
         bootstrap4
         noDataIndication="No grades available"
         headerClasses="table-header"
-      />
+      /> */}
       <Container className="nextPrevButton">
         <Button
           onClick={() => setCurrentPage(currentPage - 1)}
