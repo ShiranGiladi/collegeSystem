@@ -10,6 +10,9 @@ const adminRoutes = require('./routes/admin')
 // express app
 const app = express()
 
+// Enable CORS for all routes
+app.use(cors());
+
 // middleware
 app.use(express.json())
 app.use((req, res, next) => {
