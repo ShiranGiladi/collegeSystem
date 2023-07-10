@@ -1,12 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { Button, Container } from 'react-bootstrap';
-// import BootstrapTable from 'react-bootstrap-table-next';
-// import 'react-bootstrap-table-next/dist/react-bootstrap-table2.min.css';
+import { Button, Container, Table } from 'react-bootstrap';
 import { Link, useNavigate } from 'react-router-dom';
 
 const DeleteCourse = () => {
-  const [sortField, setSortField] = useState('');
-  const [sortOrder, setSortOrder] = useState('asc');
   const [userId, setUserId] = useState('');
   const [showLecturerTable, setShowLecturerTable] = useState(false);
   const [showStudentTable, setShowStudentTable] = useState(false);
@@ -30,123 +26,117 @@ const DeleteCourse = () => {
       navigate('/PageNotFound'); // Redirect the user to 404 page
       return;
     }
-  }, [])
-
-  const handleTableChange = (type, { sortField, sortOrder }) => {
-    setSortField(sortField);
-    setSortOrder(sortOrder);
-  };
+  }, []);
 
   const handleGoButtonClick = () => {
     const fetchCourse = async () => {
       const response = await fetch(`/api/admin/getUserCourses/${userId}`);
       const json = await response.json();
-      
+
       if (response.ok) {
-        setMsg('')
-        setErrorMsg('')
+        setMsg('');
+        setErrorMsg('');
         if (json.userType === 'lecturer') {
           setShowLecturerTable(true);
           setShowStudentTable(false);
-          setLecturers(json.courses)
+          setLecturers(json.courses);
         } else if (json.userType === 'student') {
           setShowLecturerTable(false);
           setShowStudentTable(true);
-          setStudents(json.courses)
+          setStudents(json.courses);
         }
       } else {
         setShowLecturerTable(false);
         setShowStudentTable(false);
         setErrorMsg(json.error);
-        setMsg('')
+        setMsg('');
       }
     };
 
-    fetchCourse()
+    fetchCourse();
   };
 
   const handleDeleteClick = async (name, code, year, semester) => {
     const response = await fetch(`/api/admin/deleteOneCourseForUser/${userId}/${name}/${code}/${year}/${semester}`, {
-      method: 'DELETE'
+      method: 'DELETE',
     });
     const json = await response.json();
-    
-    if(response.ok) {
+
+    if (response.ok) {
       setMsg(json.message);
-      if (year == ''){
+      if (year === '') {
         setLecturers(prevLecturers => prevLecturers.filter(course => course.name !== name && course.code !== code));
-      }
-      else {
+      } else {
         setStudents(prevStudents => prevStudents.filter(course => course.name !== name && course.code !== code));
       }
     }
-    if(!response.ok) {
+    if (!response.ok) {
       setMsg(json.error);
     }
   };
-  
+
   const handleDeleteAllButtonClick = async () => {
     const response = await fetch(`/api/admin/deleteAllCoursesForLecturer/${userId}`, {
-      method: 'DELETE'
+      method: 'DELETE',
     });
     const json = await response.json();
-    
-    if(response.ok) {
+
+    if (response.ok) {
       setMsg(json.message);
       setLecturers('');
     }
-    if(!response.ok) {
+    if (!response.ok) {
       setMsg(json.error);
     }
   };
 
   const columnsLecturer = [
     {
-        dataField: 'name',
-        text: 'Course Name',
-        sort: true,
+      dataField: 'name',
+      text: 'Course Name',
+      sort: true,
     },
     {
-        dataField: 'code',
-        text: 'Course Code',
-        sort: true,
+      dataField: 'code',
+      text: 'Course Code',
+      sort: true,
     },
     {
-        dataField: 'deleteCourse',
-        text: 'Delete Course',
-        formatter: (cellContent, row) => (
-            <Button onClick={() => handleDeleteClick(row.name, row.code, '', '')} variant="secondary">Delete</Button>
-        ),
+      dataField: 'deleteCourse',
+      text: 'Delete Course',
+      formatter: (cellContent, row) => (
+        <Button onClick={() => handleDeleteClick(row.name, row.code, '', '')} variant="secondary">Delete</Button>
+      ),
     },
   ];
 
   const columnsStudents = [
     {
-        dataField: 'name',
-        text: 'Course Name',
-        sort: true,
+      dataField: 'name',
+      text: 'Course Name',
+      sort: true,
     },
     {
-        dataField: 'code',
-        text: 'Course Code',
-        sort: true,
+      dataField: 'code',
+      text: 'Course Code',
+      sort: true,
     },
     {
-          dataField: 'year',
-          text: 'Year',
-          sort: true,
+      dataField: 'year',
+      text: 'Year',
+      sort: true,
     },
     {
-          dataField: 'semester',
-          text: 'Semester',
-          sort: true,
+      dataField: 'semester',
+      text: 'Semester',
+      sort: true,
     },
     {
-        dataField: 'deleteCourse',
-        text: 'Delete Course',
-        formatter: (cellContent, row) => (
-          <Button onClick={() => handleDeleteClick(row.name, row.code, row.year, row.semester)} variant="secondary">Delete</Button>
-        ),
+      dataField: 'deleteCourse',
+      text: 'Delete Course',
+      formatter: (cellContent, row) => (
+        <Button onClick={() => handleDeleteClick(row.name, row.code, row.year, row.semester)} variant="secondary">Delete</Button>
+      ),
     },
   ];
 
@@ -167,23 +157,26 @@ const DeleteCourse = () => {
 
         {showLecturerTable && (
           <div className='delete-course-from-lecturer'>
-            {/* <BootstrapTable
-              classes='custom-table'
-              keyField="courseName"
-              data={displayLecturers}
-              columns={columnsLecturer}
-              striped
-              bordered
-              hover
-              responsive
-              wrapperClasses="sortable teacher-table"
-              onTableChange={handleTableChange}
-              defaultSortField={sortField}
-              defaultSortOrder={sortOrder}
-              sortIndicator
-              bootstrap4
-              headerClasses="table-header"  
-            /> */}
+            <Table striped bordered hover responsive className="custom-table">
+              <thead className="table-header">
+                <tr>
+                  <th>Course Name</th>
+                  <th>Course Code</th>
+                  <th>Delete Course</th>
+                </tr>
+              </thead>
+              <tbody>
+                {displayLecturers.map((course) => (
+                  <tr key={course.code}>
+                    <td>{course.name}</td>
+                    <td>{course.code}</td>
+                    <td>
+                      <Button onClick={() => handleDeleteClick(course.name, course.code, '', '')} variant="secondary">Delete</Button>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </Table>
             <Container className="nextPrevButton">
               <Button
                 onClick={() => setCurrentPage(currentPage - 1)}
@@ -200,23 +193,30 @@ const DeleteCourse = () => {
 
         {showStudentTable && (
           <div className='delete-course-from-student'>
-            {/* <BootstrapTable
-              classes='custom-table'
-              keyField="courseName"
-              data={displayStudents}
-              columns={columnsStudents}
-              striped
-              bordered
-              hover
-              responsive
-              wrapperClasses="sortable teacher-table"
-              onTableChange={handleTableChange}
-              defaultSortField={sortField}
-              defaultSortOrder={sortOrder}
-              sortIndicator
-              bootstrap4
-              headerClasses="table-header"  
-            /> */}
+            <Table striped bordered hover responsive className="custom-table">
+              <thead className="table-header">
+                <tr>
+                  <th>Course Name</th>
+                  <th>CourseCode</th>
+                  <th>Year</th>
+                  <th>Semester</th>
+                  <th>Delete Course</th>
+                </tr>
+              </thead>
+              <tbody>
+                {displayStudents.map((course) => (
+                  <tr key={course.code}>
+                    <td>{course.name}</td>
+                    <td>{course.code}</td>
+                    <td>{course.year}</td>
+                    <td>{course.semester}</td>
+                    <td>
+                      <Button onClick={() => handleDeleteClick(course.name, course.code, course.year, course.semester)} variant="secondary">Delete</Button>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </Table>
             <Container className="nextPrevButton">
               <Button
                 onClick={() => setCurrentPage(currentPage - 1)}
@@ -240,3 +240,4 @@ const DeleteCourse = () => {
 };
 
 export default DeleteCourse;
+

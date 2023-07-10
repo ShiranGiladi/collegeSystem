@@ -5,7 +5,6 @@ const Placeholder = () => {
   return (
     <Navbar>
         <Navbar.Brand >
-            <h1></h1>
         </Navbar.Brand>
     </Navbar>
   );

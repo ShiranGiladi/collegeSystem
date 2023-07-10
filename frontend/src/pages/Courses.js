@@ -20,7 +20,7 @@ function MyCoursesPage() {
       }
 
       let response, json;
-      if(user.userType == 'student') {
+      if(user.userType === 'student') {
         response = await fetch(`/api/course/${user.username}/${year}/${semester}`);
         json = await response.json();
       }

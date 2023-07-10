@@ -18,7 +18,7 @@ const AddCourse = () => {
       navigate('/PageNotFound'); // Redirect the user to 404 page
       return;
     }
-  }, [])
+  }, [navigate, user])
 
   const handleAddCourseButton = async () => {
     const response = await fetch('/api/admin/addCourseToUser', {

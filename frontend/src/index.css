@@ -680,6 +680,7 @@
   margin: auto;
   justify-content: center;
   display: flex;
+  margin-top: 20px;
 }
 
 .grades .prevbtn, .grades-teachers .prevbtn, .delete-course .prevbtn{

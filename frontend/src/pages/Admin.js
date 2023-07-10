@@ -21,7 +21,7 @@ const AdminHome = () => {
       navigate('/PageNotFound'); // Redirect the user to 404 page
       return;
     }
-  }, [])
+  }, [navigate, user])
 
   return (
     <section className='AdminHome'>

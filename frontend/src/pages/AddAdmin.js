@@ -14,7 +14,7 @@ const AddAdmin = () => {
       navigate('/PageNotFound'); // Redirect the user to 404 page
       return;
     }
-  }, [])
+  }, [navigate, user])
 
   const handleAddAdminButton = async () => {
     const response = await fetch('/api/admin/addNewAdmin', {

@@ -1,15 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { Button, Container } from 'react-bootstrap';
-// import BootstrapTable from 'react-bootstrap-table-next';
-// import paginationFactory from 'react-bootstrap-table2-paginator';
-// import 'react-bootstrap-table-next/dist/react-bootstrap-table2.min.css';
+import { Button, Container, Table } from 'react-bootstrap';
 
 const TeachersGradesPage = () => {
   const [sortField, setSortField] = useState('');
   const [sortOrder, setSortOrder] = useState('asc');
   const [currentPage, setCurrentPage] = useState(1);
-  const rowsPerPage = 5;
+  const rowsPerPage = 4;
   const navigate = useNavigate();
 
   const { courseName, courseCode } = useParams();
@@ -19,7 +16,12 @@ const TeachersGradesPage = () => {
 
   const currentYear = new Date().getFullYear();
   const currentMonth = new Date().getMonth() + 1;
-  const semester = currentMonth >= 10 && currentMonth <= 2 ? 'Winter' : currentMonth >= 3 && currentMonth <= 7 ? 'Spring' : 'Summer';
+  const semester =
+    currentMonth >= 10 && currentMonth <= 2
+      ? 'Winter'
+      : currentMonth >= 3 && currentMonth <= 7
+      ? 'Spring'
+      : 'Summer';
 
   useEffect(() => {
     const fetchCourses = async () => {
@@ -27,7 +29,7 @@ const TeachersGradesPage = () => {
         navigate('/PageNotFound'); // Redirect the user to 404 page
         return;
       }
-      
+
       const response = await fetch(
         `/api/lecturer/${user.username}/${courseName}/${courseCode}`
       );
@@ -44,9 +46,9 @@ const TeachersGradesPage = () => {
     fetchCourses();
   }, []);
 
-  const handleTableChange = (type, { sortField, sortOrder }) => {
-    setSortField(sortField);
-    setSortOrder(sortOrder);
+  const handleTableChange = (field, order) => {
+    setSortField(field);
+    setSortOrder(order);
   };
 
   const handleUpdateButtonClick = (row) => {
@@ -54,51 +56,30 @@ const TeachersGradesPage = () => {
     navigate(`/update/${courseName}/${courseCode}`);
   };
 
-  const columns = [
-    {
-      dataField: 'name',
-      text: 'Task Name',
-      sort: true,
-    },
-    {
-      dataField: 'type',
-      text: 'Task Type',
-      sort: true,
-    },
-    {
-      dataField: 'dueDate',
-      text: 'Due Date',
-      sort: true,
-    },
-    {
-      dataField: 'percentage',
-      text: 'Percent',
-      sort: true,
-    },
-    {
-      dataField: 'updateDetails',
-      text: 'Update Details',
-      formatter: (cellContent, row) => (
-        <Button onClick={() => handleUpdateButtonClick(row)} variant="secondary">
-          Edit Task
-        </Button>
-      ),
-    },
-    {
-      dataField: 'uploadGrades',
-      text: 'Upload Grades',
-      formatter: (cellContent, row) => (
-        <Button
-          onClick={() =>
-            navigate(`/upload-grades/${courseName}/${courseCode}/${row.name}`)
-          }
-          variant="secondary"
-        >
-          Edit Grade
-        </Button>
-      ),
-    },
-  ];
+  const startIndex = (currentPage - 1) * rowsPerPage;
+  const endIndex = startIndex + rowsPerPage;
+  const sortedTasks = [...tasks].sort((a, b) => {
+    const fieldA = a[sortField];
+    const fieldB = b[sortField];
+
+    if (sortField === 'percentage') {
+      // Handle numeric fields
+      return sortOrder === 'asc' ? fieldA - fieldB : fieldB - fieldA;
+    } else {
+      // Handle string fields
+      if (fieldA && fieldB) {
+        return sortOrder === 'asc' ? fieldA.localeCompare(fieldB) : fieldB.localeCompare(fieldA);
+      } else if (fieldA) {
+        return -1;
+      } else if (fieldB) {
+        return 1;
+      }
+      return 0;
+    }
+  });
+  const displayTasks = sortedTasks.slice(startIndex, endIndex);
+
+  const totalPages = Math.ceil(tasks.length / rowsPerPage);
 
   const handleNextPage = () => {
     setCurrentPage((prevPage) => prevPage + 1);
@@ -108,10 +89,6 @@ const TeachersGradesPage = () => {
     setCurrentPage((prevPage) => prevPage - 1);
   };
 
-  const start = (currentPage - 1) * rowsPerPage;
-  const end = start + rowsPerPage;
-  const totalPages = Math.ceil(tasks.length / rowsPerPage);
-
   return (
     <section className="grades-teachers">
       <h1 className="display-5">Tasks for {courseName} Course ({courseCode})</h1>
@@ -119,42 +96,96 @@ const TeachersGradesPage = () => {
       <Container className="container-grades-teacher">
         <Button
           onClick={() => navigate(`/new-assignment/${courseName}/${courseCode}`)}
-          variant="secondary">Add New Assignment</Button>
+          variant="secondary"
+        >
+          Add New Assignment
+        </Button>
       </Container>
 
-      {/* <BootstrapTable
-        classes='custom-table'
-        keyField="assignmentName"
-        data={tasks.slice(start, end) || []}
-        columns={columns}
-        striped
-        bordered
-        hover
-        responsive
-        wrapperClasses="sortable teacher-table"
-        onTableChange={handleTableChange}
-        defaultSortField={sortField}
-        defaultSortOrder={sortOrder}
-        sortIndicator
-        bootstrap4
-        noDataIndication="No tasks available"
-        headerClasses="table-header"
-      /> */}
+      <Table striped bordered hover responsive className="custom-table sortable teacher-table">
+        <thead className="table-header">
+          <tr>
+            <th onClick={() => handleTableChange('name', sortOrder === 'asc' ? 'desc' : 'asc')}>
+              <div>
+                Task Name {sortField === 'name' && <span>{sortOrder === 'asc' ? '▲' : '▼'}</span>}
+              </div>
+            </th>
+            <th onClick={() => handleTableChange('type', sortOrder === 'asc' ? 'desc' : 'asc')}>
+              <div>
+                Task Type {sortField === 'type' && <span>{sortOrder === 'asc' ? '▲' : '▼'}</span>}
+              </div>
+            </th>
+            <th onClick={() => handleTableChange('dueDate', sortOrder === 'asc' ? 'desc' : 'asc')}>
+              <div>
+                Due Date {sortField === 'dueDate' && <span>{sortOrder === 'asc' ? '▲' : '▼'}</span>}
+              </div>
+            </th>
+            <th onClick={() => handleTableChange('percentage', sortOrder === 'asc' ? 'desc' : 'asc')}>
+              <div>
+                Percent {sortField === 'percentage' && <span>{sortOrder === 'asc' ? '▲' : '▼'}</span>}
+              </div>
+            </th>
+            <th>Update Details</th>
+            <th>Upload Grades</th>
+          </tr>
+        </thead>
+        <tbody>
+          {displayTasks.map((task) => (
+            <tr key={task.name}>
+              <td>{task.name}</td>
+              <td>{task.type}</td>
+              <td>{task.dueDate}</td>
+              <td>{task.percentage}</td>
+              <td>
+                <Button onClick={() => handleUpdateButtonClick(task)} variant="secondary">
+                  Edit Task
+                </Button>
+              </td>
+              <td>
+                <Button
+                  onClick={() =>
+                    navigate(`/upload-grades/${courseName}/${courseCode}/${task.name}`)
+                  }
+                  variant="secondary"
+                >
+                  Edit Grade
+                </Button>
+              </td>
+            </tr>
+          ))}
+          {displayTasks.length === 0 && (
+            <tr>
+              <td colSpan="6" className="text-center">
+                No tasks available
+              </td>
+            </tr>
+          )}
+        </tbody>
+      </Table>
 
       <Container className="nextPrevButton">
         <Button
           onClick={handlePreviousPage}
           disabled={currentPage === 1}
-          className="btn-secondary prevbtn">Previous Page</Button>
+          className="btn-secondary prevbtn"
+        >
+          Previous Page
+        </Button>
         <Button
           onClick={handleNextPage}
           disabled={currentPage === totalPages}
-          className="btn-secondary">Next Page</Button>
+          className="btn-secondary"
+        >
+          Next Page
+        </Button>
       </Container>
 
       <Button
         onClick={() => navigate(`/courses/${currentYear}/${semester}`)}
-        className="btn-secondary back-btn">Back</Button>
+        className="btn-secondary back-btn"
+      >
+        Back
+      </Button>
     </section>
   );
 };

@@ -1,14 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { Table, Button, Container } from 'react-bootstrap';
 import { useParams, useNavigate } from 'react-router-dom';
-// import BootstrapTable from 'react-bootstrap-table-next';
-// import 'react-bootstrap-table-next/dist/react-bootstrap-table2.min.css';
 
 const GradesPage = () => {
   const [sortField, setSortField] = useState('');
   const [sortOrder, setSortOrder] = useState('asc');
   const [currentPage, setCurrentPage] = useState(1);
-  const rowsPerPage = 5;
+  const rowsPerPage = 4;
 
   const { year, semester, courseName, courseCode } = useParams();
   const [error, setError] = useState(null);
@@ -35,72 +33,91 @@ const GradesPage = () => {
     fetchGrades();
   }, [currentPage]);
 
-  const handleTableChange = (type, { sortField, sortOrder }) => {
-    setSortField(sortField);
-    setSortOrder(sortOrder);
+  const handleTableChange = (field) => {
+    if (field === sortField) {
+      // If already sorted by the same field, reverse the order
+      setSortOrder(sortOrder === 'asc' ? 'desc' : 'asc');
+    } else {
+      // Sort by a different field
+      setSortField(field);
+      setSortOrder('asc');
+    }
     setCurrentPage(1); // Reset the current page to the first page
   };
 
-  const columns = [
-    {
-      dataField: 'name',
-      text: 'Task Name',
-      sort: true,
-    },
-    {
-      dataField: 'type',
-      text: 'Task Type',
-      sort: true,
-    },
-    {
-      dataField: 'dueDate',
-      text: 'Due Date',
-      sort: true,
-    },
-    {
-      dataField: 'grade',
-      text: 'Grade',
-      sort: true,
-    },
-    {
-      dataField: 'percentage',
-      text: 'Percent',
-      sort: true,
-    },
-    {
-      dataField: 'statsLink',
-      text: 'Stats',
-      formatter: (cellContent, row) => (
-        <Button onClick={() => navigate(`/stats/${year}/${semester}/${courseName}/${courseCode}/${row.name}`)} variant="secondary">View Stats</Button>
-      ),
-    },
-  ];
-
   const startIndex = (currentPage - 1) * rowsPerPage;
   const endIndex = startIndex + rowsPerPage;
-  const displayGrades = grades.slice(startIndex, endIndex);
+  const sortedGrades = [...grades].sort((a, b) => {
+    const fieldA = a[sortField];
+    const fieldB = b[sortField];
+
+    if (sortField === 'grade' || sortField === 'percentage') {
+      // Handle numeric fields
+      return sortOrder === 'asc' ? fieldA - fieldB : fieldB - fieldA;
+    } else if (sortField === 'dueDate') {
+      // Handle date fields
+      const dateA = new Date(fieldA);
+      const dateB = new Date(fieldB);
+      return sortOrder === 'asc' ? dateA - dateB : dateB - dateA;
+    } else {
+      // Handle string fields
+      if (fieldA && fieldB) {
+        return sortOrder === 'asc' ? fieldA.localeCompare(fieldB) : fieldB.localeCompare(fieldA);
+      } else if (fieldA) {
+        return -1;
+      } else if (fieldB) {
+        return 1;
+      }
+      return 0;
+    }
+  });
+  const displayGrades = sortedGrades.slice(startIndex, endIndex);
 
   return (
     <section className='grades'>
       <h1 className="display-5">Grades for {courseName} Course ({courseCode})</h1>
-      {/* <BootstrapTable
-        classes='custom-table'
-        keyField="assignmentName"
-        data={displayGrades}
-        columns={columns}
-        striped
-        bordered
-        hover
-        responsive
-        wrapperClasses="student-table"
-        onTableChange={handleTableChange}
-        defaultSortField={sortField}
-        defaultSortOrder={sortOrder}
-        sortIndicator
-        bootstrap4
-        noDataIndication="No grades available"
-        headerClasses="table-header"
-      /> */}
+
+      <Table striped bordered hover responsive className="custom-table student-table">
+        <thead className="table-header">
+          <tr>
+            <th onClick={() => handleTableChange('name')}>
+              Task Name {sortField === 'name' && <span>{sortOrder === 'asc' ? '▲' : '▼'}</span>}
+            </th>
+            <th onClick={() => handleTableChange('type')}>
+              Task Type {sortField === 'type' && <span>{sortOrder === 'asc' ? '▲' : '▼'}</span>}
+            </th>
+            <th onClick={() => handleTableChange('dueDate')}>
+              Due Date {sortField === 'dueDate' && <span>{sortOrder === 'asc' ? '▲' : '▼'}</span>}
+            </th>
+            <th onClick={() => handleTableChange('grade')}>
+              Grade {sortField === 'grade' && <span>{sortOrder === 'asc' ? '▲' : '▼'}</span>}
+            </th>
+            <th onClick={() => handleTableChange('percentage')}>
+              Percent {sortField === 'percentage' && <span>{sortOrder === 'asc' ? '▲' : '▼'}</span>}
+            </th>
+            <th>Stats</th>
+          </tr>
+        </thead>
+        <tbody>
+          {displayGrades.map((grade) => (
+            <tr key={grade.name}>
+              <td>{grade.name}</td>
+              <td>{grade.type}</td>
+              <td>{grade.dueDate}</td>
+              <td>{grade.grade}</td>
+              <td>{grade.percentage}</td>
+              <td>
+                <Button onClick={() => navigate(`/stats/${year}/${semester}/${courseName}/${courseCode}/${grade.name}`)} variant="secondary">View Stats</Button>
+              </td>
+            </tr>
+          ))}
+          {displayGrades.length === 0 && (
+            <tr>
+              <td colSpan="6" className="text-center">No grades available</td>
+            </tr>
+          )}
+        </tbody>
+      </Table>
       <Container className="nextPrevButton">
         <Button
           onClick={() => setCurrentPage(currentPage - 1)}
@@ -117,5 +134,3 @@ const GradesPage = () => {
 };
 
 export default GradesPage;
-
-
