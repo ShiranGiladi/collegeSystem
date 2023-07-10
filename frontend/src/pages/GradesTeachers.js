@@ -16,12 +16,7 @@ const TeachersGradesPage = () => {
 
   const currentYear = new Date().getFullYear();
   const currentMonth = new Date().getMonth() + 1;
-  const semester =
-    currentMonth >= 10 && currentMonth <= 2
-      ? 'Winter'
-      : currentMonth >= 3 && currentMonth <= 7
-      ? 'Spring'
-      : 'Summer';
+  const semester = currentMonth >= 10 && currentMonth <= 2 ? 'Winter' : currentMonth >= 3 && currentMonth <= 7 ? 'Spring' : 'Summer';
 
   useEffect(() => {
     const fetchCourses = async () => {
@@ -44,7 +39,7 @@ const TeachersGradesPage = () => {
     };
 
     fetchCourses();
-  }, []);
+  }, [courseCode, courseName, navigate, user]);
 
   const handleTableChange = (field, order) => {
     setSortField(field);
@@ -179,7 +174,7 @@ const TeachersGradesPage = () => {
           Next Page
         </Button>
       </Container>
-
+      {error && <div className="error-text">{error}</div>}
       <Button
         onClick={() => navigate(`/courses/${currentYear}/${semester}`)}
         className="btn-secondary back-btn"

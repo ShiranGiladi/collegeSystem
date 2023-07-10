@@ -31,7 +31,7 @@ const GradesPage = () => {
     };
 
     fetchGrades();
-  }, [currentPage]);
+  }, [courseName, navigate, semester, user, year, currentPage]);
 
   const handleTableChange = (field) => {
     if (field === sortField) {
@@ -128,6 +128,7 @@ const GradesPage = () => {
           disabled={endIndex >= grades.length}
           className="btn-secondary">Next Page</Button>
       </Container>
+      {error && <div className="error-text">{error}</div>}
       <Button onClick={() => navigate(`/courses/${year}/${semester}`)} className="btn-secondary back-btn">Back</Button>
     </section>
   );

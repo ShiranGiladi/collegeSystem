@@ -28,9 +28,7 @@ import { createContext, useState } from 'react';
 
 export const ThemeContext = createContext(null);
 
-function App() {
-  const { user } = useAuthContext()
-  
+function App() {  
   const [theme, setTheme] = useState("light");
   const toggleTheme = () => {
     setTheme((currentTheme) => (currentTheme === "light" ? "dark" : "light"));

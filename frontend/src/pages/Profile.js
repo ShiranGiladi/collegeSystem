@@ -39,7 +39,7 @@ const Profile = () => {
     }
 
     fetchCourses()
-  }, [])
+  }, [navigate, user])
 
   const handleEmailEdit = async () => {
     if (isEmailEditable) {

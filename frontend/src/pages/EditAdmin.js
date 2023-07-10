@@ -29,7 +29,7 @@ const EditAdmin = () => {
     }
 
     fetchdetails()
-  }, []);
+  }, [navigate, user]);
 
   const handleSaveButton = async () => {
     const response = await fetch('/api/admin/editAdminDetails', {

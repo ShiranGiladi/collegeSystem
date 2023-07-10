@@ -39,7 +39,7 @@ function MyCoursesPage() {
     }
 
     fetchCourses()
-  }, [])
+  }, [navigate, user])
 
   const displayCourses = () => {
     if (courseDetails === null) {
@@ -60,7 +60,7 @@ function MyCoursesPage() {
   }
 
   const handleDisplayClick = (course) => {
-    if(user.userType == 'student') {
+    if(user.userType === 'student') {
       navigate(`/grades/${year}/${semester}/${course.name}/${course.code}`);
     }
     else { //user.userType == 'lecturer'

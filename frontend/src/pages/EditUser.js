@@ -20,7 +20,7 @@ const EditUsers = () => {
       navigate('/PageNotFound'); // Redirect the user to 404 page
       return;
     }
-  }, [])
+  }, [navigate, user])
 
   const handleGoButtonClick = async () => {
     const response = await fetch(`/api/admin/getUserDetails/${userId}`);

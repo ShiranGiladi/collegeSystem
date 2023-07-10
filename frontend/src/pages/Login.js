@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { Button, Modal, Form } from 'react-bootstrap';
-import { MortarboardFill, ExclamationCircle, Check } from "react-bootstrap-icons";
+import { MortarboardFill, ExclamationCircle } from "react-bootstrap-icons";
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import { useLogin } from '../hooks/useLogin'
 import { useNavigate } from 'react-router-dom';
@@ -17,7 +17,7 @@ const LoginForm = () => {
   const handleShow = () => setShow(true);
   const navigate = useNavigate();
 
-  const {login, isLoading, error} = useLogin()
+  const {login, error} = useLogin()
 
   /** login button */
   const visitPage = async (e) => {
@@ -30,17 +30,17 @@ const LoginForm = () => {
     
     // Check if user is authenticated
     const user = JSON.parse(localStorage.getItem('user'));
-    if (user && user.userType == 'student') {
+    if (user && user.userType === 'student') {
       navigate('/home') // Redirect to home page
     }
-    if (user && user.userType == 'lecturer') {
+    if (user && user.userType === 'lecturer') {
       const currentYear = new Date().getFullYear();
       const currentMonth = new Date().getMonth() + 1;
       const semester = currentMonth >= 10 && currentMonth <= 2 ? 'Winter' : currentMonth >= 3 && currentMonth <= 7 ? 'Spring' : 'Summer';
 
       navigate(`/courses/${currentYear}/${semester}`) // Redirect to courses page
     }
-    if (user && user.userType == 'admin') {
+    if (user && user.userType === 'admin') {
       navigate(`/admin`) // Redirect to admin page
     }
   }

@@ -18,7 +18,7 @@ const NewAssignment = () => {
       navigate('/PageToFound'); // Redirect the user to 404 page
       return;
     }
-  }, [])
+  }, [navigate, user])
 
   const handleSubmit = async () => {
     const response = await fetch('/api/user/addNewTask', {
