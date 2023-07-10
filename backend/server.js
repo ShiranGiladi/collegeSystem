@@ -2,6 +2,7 @@ require('dotenv').config()
 
 const express = require('express')
 const mongoose = require('mongoose')
+const cors = require('cors');
 const courseRoutes = require('./routes/course')
 const lecturerRoutes = require('./routes/lecturer')
 const userRoutes = require('./routes/user')
