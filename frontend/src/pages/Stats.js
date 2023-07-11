@@ -8,7 +8,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 const BarChart = () => {
   const { year, semester, courseName, courseCode, assignmentName } = useParams();
   const [error, setError] = useState(null)
-  const [fromDB, setfromDB] = useState([])
+  const [fromDB, setFromDB] = useState([]);
   const [isInitialized, setIsInitialized] = useState(false);
   const user = JSON.parse(localStorage.getItem('user'));
   const navigate = useNavigate();
