@@ -12,7 +12,7 @@ const router = express.Router()
 // router.use(requireAuth)
 
 // GET courses name for student
-router.get('/:username/:year/:semester', getCoursesForUser)
+router.get(`${process.env.SERVER_URL}/:username/:year/:semester`, getCoursesForUser)
 
 // GET course information
 router.get('/:username/:year/:semester/:courseName', getCoursesForInfo)
