@@ -24,14 +24,10 @@ import EditAdmin from './pages/EditAdmin';
 import NotFound from './pages/NotFound';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { createContext, useState } from 'react';
-import dotenv from 'dotenv';
 
 export const ThemeContext = createContext(null);
 
 function App() {  
-  // Configure dotenv to load variables from .env file
-  dotenv.config();
-
   const [theme, setTheme] = useState("light");
   const toggleTheme = () => {
     setTheme((currentTheme) => (currentTheme === "light" ? "dark" : "light"));
