@@ -21,13 +21,13 @@ function MyCoursesPage() {
       
       let response, json;
       if(user.userType === 'student') {
-        response = await fetch(`api/course/${user.username}/${year}/${semester}`);
+        response = await fetch(`/api/course/${user.username}/${year}/${semester}`);
         json = await response.json();
       }
       else { //user.userType == 'lecturer'
         
         // Construct the fetch request URL
-        const fetchUrl = `${process.env.SERVER_URL}/api/lecturer/${user.username}`;
+        const fetchUrl = `/${process.env.SERVER_URL}/api/lecturer/${user.username}`;
         console.log("fetchUrl", fetchUrl)
         response = await fetch(fetchUrl);
         json = await response.json();
