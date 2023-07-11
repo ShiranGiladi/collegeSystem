@@ -12,6 +12,7 @@ function MyCoursesPage() {
   const user = JSON.parse(localStorage.getItem('user'));
   const navigate = useNavigate();
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     const fetchCourses = async () => {
       if (!user || user.userType === 'admin') {
@@ -39,8 +40,7 @@ function MyCoursesPage() {
     }
 
     fetchCourses()
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [navigate, user, semester, year])
+  }, [])
 
   const displayCourses = () => {
     if (courseDetails === null) {
