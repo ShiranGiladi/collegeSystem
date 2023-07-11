@@ -25,7 +25,7 @@ function MyCoursesPage() {
         json = await response.json();
       }
       else { //user.userType == 'lecturer'
-        response = await fetch(`/api/lecturer/${user.username}`);
+        response = await fetch(`${process.env.SERVER_URL}/api/lecturer/${user.username}`);
         json = await response.json();
       }
 
