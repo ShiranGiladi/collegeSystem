@@ -21,7 +21,7 @@ function MyCoursesPage() {
       
       let response, json;
       if(user.userType === 'student') {
-        response = await fetch(`https://college-system-pixh.onrender.com/api/course/${user.username}/${year}/${semester}`);
+        response = await fetch(`api/course/${user.username}/${year}/${semester}`);
         json = await response.json();
       }
       else { //user.userType == 'lecturer'
