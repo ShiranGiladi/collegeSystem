@@ -37,7 +37,7 @@ const LoginForm = () => {
       const currentYear = new Date().getFullYear();
       const currentMonth = new Date().getMonth() + 1;
       const semester = currentMonth >= 10 && currentMonth <= 2 ? 'Winter' : currentMonth >= 3 && currentMonth <= 7 ? 'Spring' : 'Summer';
-
+      console.log("semester", semester)
       navigate(`/courses/${currentYear}/${semester}`) // Redirect to courses page
     }
     if (user && user.userType === 'admin') {
