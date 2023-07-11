@@ -2,9 +2,10 @@ const User = require('../models/studentModel')
 
 const getCoursesForUser = async (req, res) => {
     const { username, year, semester } = req.params;
-    console.log(username, year, semester)
+    
     try {
         const user = await User.findOne({ username });
+        console.log("user=", user)
         const courses = user.courses.filter(course => course.year === Number(year) && course.semester === semester);
         if (courses.length === 0) {
             res.status(404).json({ error: "Courses not found" });
