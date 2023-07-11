@@ -18,7 +18,7 @@ function MyCoursesPage() {
         navigate('/PageNotFound'); // Redirect the user to 404 page
         return;
       }
-
+      console.log("URL=", process.env.SERVER_URL)
       let response, json;
       if(user.userType === 'student') {
         response = await fetch(`${process.env.SERVER_URL}/api/course/${user.username}/${year}/${semester}`);
