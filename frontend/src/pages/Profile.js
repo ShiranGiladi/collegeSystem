@@ -23,7 +23,7 @@ const Profile = () => {
     }
     
     const fetchCourses = async () => {
-      const response = await fetch(`/api/user/profileDetails/${user.username}`);
+      const response = await fetch(`https://college-system-pixh.onrender.com/api/user/profileDetails/${user.username}`);
       const json = await response.json();
       if(response.ok) {
         setDetails(json)
