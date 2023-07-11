@@ -39,7 +39,8 @@ function MyCoursesPage() {
     }
 
     fetchCourses()
-  }, [user, semester, year])
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [navigate, user, semester, year])
 
   const displayCourses = () => {
     if (courseDetails === null) {
