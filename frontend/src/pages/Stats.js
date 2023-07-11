@@ -13,26 +13,32 @@ const BarChart = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    if (!user || user.userType !== 'student') {
-      navigate('/PageToFound'); // Redirect the user to 404 page
-      return;
-    }
-    
-    const fetchCourses = async () => {
-      const response = await fetch(`https://college-system-pixh.onrender.com/api/course/statsFor/${year}/${semester}/${courseName}/${assignmentName}`);
-      const json = await response.json();
+    if (!isInitialized) {
+      setIsInitialized(true);
       
-      if(response.ok) {
-        setfromDB(json)
+      if (!user || user.userType !== 'student') {
+        navigate('/PageToFound'); // Redirect the user to 404 page
+        return;
       }
+      
+      const fetchCourses = async () => {
+        try {
+          const response = await fetch(`https://college-system-pixh.onrender.com/api/course/statsFor/${year}/${semester}/${courseName}/${assignmentName}`);
+          const json = await response.json();
 
-      if(!response.ok) {
-        setError(json.error)
-      }
+          if (response.ok) {
+            setFromDB(json);
+          } else {
+            setError(json.error);
+          }
+        } catch (error) {
+          setError("Error fetching data.");
+        }
+      };
+
+      fetchCourses();
     }
-
-    fetchCourses()
-  }, [assignmentName, courseName, navigate, semester, user, year])
+  }, [isInitialized, navigate, user, semester, year, courseName, assignmentName]);
   
   /** array to hold the info for the distribution chart */
   const distribution = [0, 0, 0, 0, 0, 0];
