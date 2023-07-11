@@ -21,11 +21,11 @@ function MyCoursesPage() {
       
       let response, json;
       if(user.userType === 'student') {
-        response = await fetch(`${process.env.SERVER_URL}/api/course/${user.username}/${year}/${semester}`);
+        response = await fetch(`https://college-system-pixh.onrender.com/api/course/${user.username}/${year}/${semester}`);
         json = await response.json();
       }
       else { //user.userType == 'lecturer'
-        response = await fetch(`${process.env.SERVER_URL}/api/lecturer/${user.username}`);
+        response = await fetch(`https://college-system-pixh.onrender.com/api/lecturer/${user.username}`);
         json = await response.json();
       }
       console.log("json=", json)
