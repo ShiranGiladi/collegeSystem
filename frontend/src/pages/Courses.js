@@ -25,19 +25,6 @@ function MyCoursesPage() {
         json = await response.json();
       }
       else { //user.userType == 'lecturer'
-        if (user.username) {
-          const url = `https://college-system-pixh.onrender.com/api/lecturer/${user.username}`;
-          try {
-            const response = await fetch(url);
-            // Process the response
-          } catch (error) {
-            // Handle the error
-          }
-        } else {
-          // Handle the case when user.username is not defined
-          console.log("ERROR")
-        }
-
         response = await fetch(`https://college-system-pixh.onrender.com/api/lecturer/${user.username}`);
         json = await response.json();
       }
