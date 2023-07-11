@@ -6,7 +6,6 @@ const getCoursesForUser = async (req, res) => {
     try {
         const user = await User.findOne({ username });
         const courses = user.courses.filter(course => course.year === Number(year) && course.semester === semester);
-        console.log("courses=", courses)
         if (courses.length === 0) {
             res.status(404).json({ error: "Courses not found" });
         }
