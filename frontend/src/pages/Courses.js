@@ -25,7 +25,9 @@ function MyCoursesPage() {
         json = await response.json();
       }
       else { //user.userType == 'lecturer'
-        response = await fetch(`https://college-system-pixh.onrender.com/api/lecturer/${user.username}`);
+        // Construct the fetch request URL
+        const fetchUrl = `${process.env.SERVER_URL}/api/lecturer/${user.username}`;
+        response = await fetch(fetchUrl);
         json = await response.json();
       }
       console.log("json=", json)
