@@ -21,7 +21,7 @@ const GradesPage = () => {
     }
     
     const fetchGrades = async () => {
-      const response = await fetch(`/api/course/${user.username}/${year}/${semester}/${courseName}?page=${currentPage}&limit=${rowsPerPage}`);
+      const response = await fetch(`https://college-system-pixh.onrender.com/api/course/${user.username}/${year}/${semester}/${courseName}?page=${currentPage}&limit=${rowsPerPage}`);
       const json = await response.json();
       if (response.ok) {
         setGrades(json);

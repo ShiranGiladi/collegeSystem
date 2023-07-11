@@ -31,7 +31,7 @@ const UpdateAssignment = () => {
   }, [navigate, user]);
 
   const handleUpdateClick = async () => {
-    const response = await fetch('/api/user/updateTask', {
+    const response = await fetch('https://college-system-pixh.onrender.com/api/user/updateTask', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ courseName, courseCode, previousName, updateName, dueDate, percentage, type }),
@@ -46,7 +46,7 @@ const UpdateAssignment = () => {
   };
 
   const handleDeleteClick = async () => {
-    const response = await fetch(`/api/user/deleteTask/${courseName}/${courseCode}/${updateName}`, {
+    const response = await fetch(`https://college-system-pixh.onrender.com/api/user/deleteTask/${courseName}/${courseCode}/${updateName}`, {
       method: 'DELETE'
     });
     const json = await response.json();

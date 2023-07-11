@@ -22,7 +22,7 @@ const NewUsers = () => {
   }, [navigate, user])
 
   const handleAddUserBtn = async () => {
-    const response = await fetch('/api/admin/addNewUser', {
+    const response = await fetch('https://college-system-pixh.onrender.com/api/admin/addNewUser', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ userType, fullName, email, phone, idUser, username, password }),

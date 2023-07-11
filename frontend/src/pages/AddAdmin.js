@@ -17,7 +17,7 @@ const AddAdmin = () => {
   }, [navigate, user])
 
   const handleAddAdminButton = async () => {
-    const response = await fetch('/api/admin/addNewAdmin', {
+    const response = await fetch('https://college-system-pixh.onrender.com/api/admin/addNewAdmin', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ username, password }),

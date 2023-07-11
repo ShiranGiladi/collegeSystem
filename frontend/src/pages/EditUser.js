@@ -23,7 +23,7 @@ const EditUsers = () => {
   }, [navigate, user])
 
   const handleGoButtonClick = async () => {
-    const response = await fetch(`/api/admin/getUserDetails/${userId}`);
+    const response = await fetch(`https://college-system-pixh.onrender.com/api/admin/getUserDetails/${userId}`);
     const json = await response.json();
     if (response.ok) {
       setMsgForUpdateOrDelete('')
@@ -48,7 +48,7 @@ const EditUsers = () => {
   };
 
   const handleUpdateUserButton = async () => {
-    const response = await fetch('/api/admin/updateUserDetails', {
+    const response = await fetch('https://college-system-pixh.onrender.com/api/admin/updateUserDetails', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ userId, fullName, email, phone, idUser, username, password }),
@@ -64,7 +64,7 @@ const EditUsers = () => {
   };
 
   const handleDeleteUserButton = async () => {
-    const response = await fetch(`/api/admin/deleteUser/${userId}`, {
+    const response = await fetch(`https://college-system-pixh.onrender.com/api/admin/deleteUser/${userId}`, {
       method: 'DELETE'
     });
     const json = await response.json();

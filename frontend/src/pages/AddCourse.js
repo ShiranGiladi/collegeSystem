@@ -21,7 +21,7 @@ const AddCourse = () => {
   }, [navigate, user])
 
   const handleAddCourseButton = async () => {
-    const response = await fetch('/api/admin/addCourseToUser', {
+    const response = await fetch('https://college-system-pixh.onrender.com/api/admin/addCourseToUser', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ userType: selectedUserType, userId, courseName, courseCode, year, semester }),

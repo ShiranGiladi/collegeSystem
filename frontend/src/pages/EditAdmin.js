@@ -16,7 +16,7 @@ const EditAdmin = () => {
         return;
       }
 
-      const response = await fetch(`/api/admin/getAdminDetails/${user.username}`);
+      const response = await fetch(`https://college-system-pixh.onrender.com/api/admin/getAdminDetails/${user.username}`);
       const json = await response.json();
       
       if(response.ok) {
@@ -32,7 +32,7 @@ const EditAdmin = () => {
   }, [navigate, user]);
 
   const handleSaveButton = async () => {
-    const response = await fetch('/api/admin/editAdminDetails', {
+    const response = await fetch('https://college-system-pixh.onrender.com/api/admin/editAdminDetails', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ currentUsername: user.username, username, password }),

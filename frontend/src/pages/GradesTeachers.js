@@ -26,7 +26,7 @@ const TeachersGradesPage = () => {
       }
 
       const response = await fetch(
-        `/api/lecturer/${user.username}/${courseName}/${courseCode}`
+        `https://college-system-pixh.onrender.com/api/lecturer/${user.username}/${courseName}/${courseCode}`
       );
       const json = await response.json();
       if (response.ok) {

@@ -30,7 +30,7 @@ const DeleteCourse = () => {
 
   const handleGoButtonClick = () => {
     const fetchCourse = async () => {
-      const response = await fetch(`/api/admin/getUserCourses/${userId}`);
+      const response = await fetch(`https://college-system-pixh.onrender.com/api/admin/getUserCourses/${userId}`);
       const json = await response.json();
 
       if (response.ok) {
@@ -57,7 +57,7 @@ const DeleteCourse = () => {
   };
 
   const handleDeleteClick = async (name, code, year, semester) => {
-    const response = await fetch(`/api/admin/deleteOneCourseForUser/${userId}/${name}/${code}/${year}/${semester}`, {
+    const response = await fetch(`https://college-system-pixh.onrender.com/api/admin/deleteOneCourseForUser/${userId}/${name}/${code}/${year}/${semester}`, {
       method: 'DELETE',
     });
     const json = await response.json();
@@ -76,7 +76,7 @@ const DeleteCourse = () => {
   };
 
   const handleDeleteAllButtonClick = async () => {
-    const response = await fetch(`/api/admin/deleteAllCoursesForLecturer/${userId}`, {
+    const response = await fetch(`https://college-system-pixh.onrender.com/api/admin/deleteAllCoursesForLecturer/${userId}`, {
       method: 'DELETE',
     });
     const json = await response.json();

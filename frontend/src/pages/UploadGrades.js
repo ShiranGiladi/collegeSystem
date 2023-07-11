@@ -22,7 +22,7 @@ const UploadGrades = () => {
   }, [navigate, user])
 
   const handleGoButtonClick = async () => {
-    const response = await fetch(`/api/lecturer/studentGrade/${courseName}/${courseCode}/${name}/${studentId}`);
+    const response = await fetch(`https://college-system-pixh.onrender.com/api/lecturer/studentGrade/${courseName}/${courseCode}/${name}/${studentId}`);
     const json = await response.json();
     if (response.ok) {
       setGrade(json);
@@ -34,7 +34,7 @@ const UploadGrades = () => {
   };
 
   const handleSubmitButtonClick = async () => {
-    const response = await fetch('/api/lecturer/uploadGradeForOneStudent', {
+    const response = await fetch('https://college-system-pixh.onrender.com/api/lecturer/uploadGradeForOneStudent', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ courseName, courseCode, taskName: name, userId: studentId, newGrade: grade }),
@@ -66,7 +66,7 @@ const UploadGrades = () => {
     formData.append('file', file);
   
     try {
-      const response = await fetch(`/api/lecturer/uploadExcelFile/${courseName}/${courseCode}/${name}/upload`, {
+      const response = await fetch(`https://college-system-pixh.onrender.com/api/lecturer/uploadExcelFile/${courseName}/${courseCode}/${name}/upload`, {
         method: 'POST',
         body: formData,
       });

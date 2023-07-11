@@ -19,7 +19,7 @@ const BarChart = () => {
     }
     
     const fetchCourses = async () => {
-      const response = await fetch(`/api/course/statsFor/${year}/${semester}/${courseName}/${assignmentName}`);
+      const response = await fetch(`https://college-system-pixh.onrender.com/api/course/statsFor/${year}/${semester}/${courseName}/${assignmentName}`);
       const json = await response.json();
       
       if(response.ok) {

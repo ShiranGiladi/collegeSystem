@@ -44,7 +44,7 @@ const Profile = () => {
   const handleEmailEdit = async () => {
     if (isEmailEditable) {
       // Save changes here (e.g., update the email value in the database)
-      const response = await fetch('/api/user/profileDetails/update', {
+      const response = await fetch('https://college-system-pixh.onrender.com/api/user/profileDetails/update', {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({username: user.username, detailToUpdate: editableEmail, whatToUpdate: 'email'})
@@ -65,7 +65,7 @@ const Profile = () => {
   const handlePhoneEdit = async () => {
     if (isPhoneEditable) {
       // Save changes here (e.g., update the phone value in the database)
-      const response = await fetch('/api/user/profileDetails/update', {
+      const response = await fetch('https://college-system-pixh.onrender.com/api/user/profileDetails/update', {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({username: user.username, detailToUpdate: editablePhone, whatToUpdate: 'phone'})

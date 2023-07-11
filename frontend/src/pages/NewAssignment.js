@@ -21,7 +21,7 @@ const NewAssignment = () => {
   }, [navigate, user])
 
   const handleSubmit = async () => {
-    const response = await fetch('/api/user/addNewTask', {
+    const response = await fetch('https://college-system-pixh.onrender.com/api/user/addNewTask', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ courseName, courseCode, name, dueDate, percentage, type }),
