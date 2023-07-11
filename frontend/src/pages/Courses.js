@@ -39,7 +39,9 @@ function MyCoursesPage() {
       }
     }
 
-    fetchCourses()
+    if (!courseDetails && !error) {
+      fetchCourses();
+    }
   }, [navigate, user, semester, year, courseDetails, error])
 
   const displayCourses = () => {
