@@ -32,7 +32,7 @@ function MyCoursesPage() {
         response = await fetch(fetchUrl);
         json = await response.json();
       }
-      console.log("json=", json)
+      
       if(response.ok) {
         setCourseDetails(json)
       }
