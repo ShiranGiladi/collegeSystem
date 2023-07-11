@@ -28,7 +28,7 @@ function MyCoursesPage() {
         response = await fetch(`${process.env.SERVER_URL}/api/lecturer/${user.username}`);
         json = await response.json();
       }
-
+      console.log("json=", json)
       if(response.ok) {
         setCourseDetails(json)
       }
