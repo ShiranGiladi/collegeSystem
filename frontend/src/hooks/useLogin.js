@@ -10,7 +10,7 @@ export const useLogin = () => {
         setIsLoading(true)
         setError(null)
         // console.log("url", process.env.SERVER_URL)
-        const response = await fetch(`${process.env.SERVER_URL}/api/user/login`, {
+        const response = await fetch(`https://college-system-pixh.onrender.com/api/user/login`, {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({username, password})
