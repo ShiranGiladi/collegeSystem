@@ -31,7 +31,7 @@ const EditAdmin = () => {
 
     if (isInitialRender) {
       setIsInitialRender(false);
-      fetchDetails();
+      fetchdetails();
     }
 
   }, [isInitialRender, navigate, user]);
