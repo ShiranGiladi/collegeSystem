@@ -13,13 +13,14 @@ const TeachersGradesPage = () => {
   const [error, setError] = useState(null);
   const [tasks, setTasks] = useState([]);
   const user = JSON.parse(localStorage.getItem('user'));
+  const [isInitialRender, setIsInitialRender] = useState(true);
 
   const currentYear = new Date().getFullYear();
   const currentMonth = new Date().getMonth() + 1;
   const semester = currentMonth >= 10 && currentMonth <= 2 ? 'Winter' : currentMonth >= 3 && currentMonth <= 7 ? 'Spring' : 'Summer';
 
   useEffect(() => {
-    const fetchCourses = async () => {
+    const fetchGrades = async () => {
       if (!user || user.userType !== 'lecturer') {
         navigate('/PageNotFound'); // Redirect the user to 404 page
         return;
@@ -38,7 +39,10 @@ const TeachersGradesPage = () => {
       }
     };
 
-    fetchCourses();
+    if (isInitialRender) {
+      setIsInitialRender(false);
+      fetchGrades();
+    }
   }, [courseCode, courseName, navigate, user]);
 
   const handleTableChange = (field, order) => {
