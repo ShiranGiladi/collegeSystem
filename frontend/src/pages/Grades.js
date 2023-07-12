@@ -13,6 +13,7 @@ const GradesPage = () => {
   const [grades, setGrades] = useState([]);
   const user = JSON.parse(localStorage.getItem('user'));
   const navigate = useNavigate();
+  const [isInitialRender, setIsInitialRender] = useState(true);
 
   useEffect(() => {
     if (!user || user.userType !== 'student') {
@@ -30,8 +31,12 @@ const GradesPage = () => {
       }
     };
 
-    fetchGrades();
-  }, [courseName, navigate, semester, user, year, currentPage]);
+    if (isInitialRender) {
+      setIsInitialRender(false);
+      fetchGrades();
+    }
+    
+  }, [isInitialRender, courseName, navigate, semester, user, year, currentPage]);
 
   const handleTableChange = (field) => {
     if (field === sortField) {
