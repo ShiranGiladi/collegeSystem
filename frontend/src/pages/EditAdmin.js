@@ -17,7 +17,7 @@ const EditAdmin = () => {
         return;
       }
 
-      const response = await fetch(`${process.env.SERVER_UR}L/api/admin/getAdminDetails/${user.username}`);
+      const response = await fetch(`${process.env.SERVER_URL}/api/admin/getAdminDetails/${user.username}`);
       const json = await response.json();
       
       if(response.ok) {
