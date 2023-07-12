@@ -94,55 +94,7 @@ const DeleteCourse = () => {
     }
   };
 
-  // const columnsLecturer = [
-  //   {
-  //     dataField: 'name',
-  //     text: 'Course Name',
-  //     sort: true,
-  //   },
-  //   {
-  //     dataField: 'code',
-  //     text: 'Course Code',
-  //     sort: true,
-  //   },
-  //   {
-  //     dataField: 'deleteCourse',
-  //     text: 'Delete Course',
-  //     formatter: (cellContent, row) => (
-  //       <Button onClick={() => handleDeleteClick(row.name, row.code, '', '')} variant="secondary">Delete</Button>
-  //     ),
-  //   },
-  // ];
-
-  // const columnsStudents = [
-  //   {
-  //     dataField: 'name',
-  //     text: 'Course Name',
-  //     sort: true,
-  //   },
-  //   {
-  //     dataField: 'code',
-  //     text: 'Course Code',
-  //     sort: true,
-  //   },
-  //   {
-  //     dataField: 'year',
-  //     text: 'Year',
-  //     sort: true,
-  //   },
-  //   {
-  //     dataField: 'semester',
-  //     text: 'Semester',
-  //     sort: true,
-  //   },
-  //   {
-  //     dataField: 'deleteCourse',
-  //     text: 'Delete Course',
-  //     formatter: (cellContent, row) => (
-  //       <Button onClick={() => handleDeleteClick(row.name, row.code, row.year, row.semester)} variant="secondary">Delete</Button>
-  //     ),
-  //   },
-  // ];
+  
 
   let link = '/admin';
 
