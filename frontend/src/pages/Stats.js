@@ -163,7 +163,7 @@ const BarChart = () => {
       </div>
 
       <div className="chart-container">
-       {fromDB.length > 0 && <Bar data={setAllDetails()} />}
+       {fromDB.length > 0 ? <Bar data={setAllDetails().data} options={setAllDetails().options} /> : null}
        {error && (
             <div className="error-text">
               {error}
