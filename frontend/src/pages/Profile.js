@@ -15,6 +15,7 @@ const Profile = () => {
   const [msg, setMsg] = useState(null)
   const [details, setDetails] = useState({ email: '', phone: '' })
   const navigate = useNavigate();
+  const [isInitialRender, setIsInitialRender] = useState(true);
 
   useEffect(() => {
     if (!user || user.userType === 'admin') {
@@ -22,7 +23,7 @@ const Profile = () => {
       return;
     }
     
-    const fetchCourses = async () => {
+    const fetchProfileDetails = async () => {
       const response = await fetch(`https://college-system-pixh.onrender.com/api/user/profileDetails/${user.username}`);
       const json = await response.json();
       if(response.ok) {
@@ -38,8 +39,12 @@ const Profile = () => {
       }
     }
 
-    fetchCourses()
-  }, [navigate, user])
+    if (isInitialRender) {
+      setIsInitialRender(false);
+      fetchProfileDetails();
+    }
+
+  }, [isInitialRender, navigate, user])
 
   const handleEmailEdit = async () => {
     if (isEmailEditable) {
