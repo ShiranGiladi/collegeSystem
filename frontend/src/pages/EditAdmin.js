@@ -8,7 +8,7 @@ const EditAdmin = () => {
   const [msg, setMsg] = useState('');
   const user = JSON.parse(localStorage.getItem('user'));
   const navigate = useNavigate();
-  const [initialRender, setInitialRender] = useState(true);
+  const [isInitialRender, setIsInitialRender] = useState(true);
 
   useEffect(() => {
     const fetchdetails = async () => {
@@ -29,12 +29,12 @@ const EditAdmin = () => {
       }
     }
 
-    if (initialRender) {
-      setInitialRender(false);
-      return;
+    if (isInitialRender) {
+      setIsInitialRender(false);
+    } else {
+      fetchdetails();
     }
 
-    fetchdetails()
   }, [initialRender, navigate, user]);
 
   const handleSaveButton = async () => {
