@@ -87,7 +87,7 @@ const DeleteCourse = () => {
 
     if (response.ok) {
       setMsg(json.message);
-      setLecturers('');
+      setLecturers([]);
     }
     if (!response.ok) {
       setMsg(json.error);
