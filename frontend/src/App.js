@@ -22,7 +22,7 @@ import DeleteCourse from './pages/DeleteCourse';
 import AddAdmin from './pages/AddAdmin';
 import EditAdmin from './pages/EditAdmin';
 import NotFound from './pages/NotFound';
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { createContext, useState } from 'react';
 
 export const ThemeContext = createContext(null);
@@ -36,7 +36,7 @@ function App() {
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
       <div className="App" id={theme}>
-        <BrowserRouter>
+        <HashRouter>
           <div className="pages">
             <Routes>
               <Route
@@ -255,7 +255,7 @@ function App() {
           
             </Routes>
           </div>
-        </BrowserRouter>
+        </HashRouter>
       </div>
     </ThemeContext.Provider>
   );
