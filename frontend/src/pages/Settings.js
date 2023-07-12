@@ -61,7 +61,7 @@ function SettingsPage() {
         </div>
         <div className="row mt-4">
           <div className="col">
-            <Button className="btn-secondary" onClick={() => navigate(`/setting`)}>Update Preferences</Button>
+            <Button className="btn-secondary" onClick={() => navigate(`/settings`)}>Update Preferences</Button>
           </div>
         </div>
       </div>
@@ -83,7 +83,7 @@ function SettingsPage() {
               <label className="title">Message</label>
               <textarea className="form-control" rows="5" placeholder="Enter your message"></textarea>
             </div>
-            <Button type="submit" className="btn-secondary submit-help" onClick={() => navigate(`/setting`)}>Submit</Button>
+            <Button type="submit" className="btn-secondary submit-help" onClick={() => navigate(`/settings`)}>Submit</Button>
           </form>
         </Container>
       </div>
