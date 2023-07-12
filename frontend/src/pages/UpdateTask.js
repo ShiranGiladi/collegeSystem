@@ -13,22 +13,26 @@ const UpdateAssignment = () => {
   const [msg, setMsg] = useState(null);
   const navigate = useNavigate();
   const user = JSON.parse(localStorage.getItem('user'));
+  const [isInitialRender, setIsInitialRender] = useState(true);
 
   useEffect(() => {
     if (!user || user.userType !== 'lecturer') {
       navigate('/PageToFound'); // Redirect the user to 404 page
       return;
     }
-
-    const rowData = JSON.parse(localStorage.getItem('rowData'));
-    if (rowData) {
-      setAssignmentType(rowData.type);
-      setAssignmentName(rowData.name);
-      setpreviousName(rowData.name);
-      setPercentage(rowData.percentage);
-      setDueDate(rowData.dueDate);
+    if (isInitialRender) {
+      setIsInitialRender(false);
+      const rowData = JSON.parse(localStorage.getItem('rowData'));
+      if (rowData) {
+        setAssignmentType(rowData.type);
+        setAssignmentName(rowData.name);
+        setpreviousName(rowData.name);
+        setPercentage(rowData.percentage);
+        setDueDate(rowData.dueDate);
+      }
     }
-  }, [navigate, user]);
+
+  }, [isInitialRender, navigate, user]);
 
   const handleUpdateClick = async () => {
     const response = await fetch('https://college-system-pixh.onrender.com/api/user/updateTask', {
