@@ -9,8 +9,8 @@ const DeleteCourse = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const rowsPerPage = 4;
 
-  const [lecturers, setLecturers] = useState('');
-  const [students, setStudents] = useState('');
+  const [lecturers, setLecturers] = useState([]);
+  const [students, setStudents] = useState([]);
   const [errorMsg, setErrorMsg] = useState('');
   const [msg, setMsg] = useState('');
   const user = JSON.parse(localStorage.getItem('user'));
