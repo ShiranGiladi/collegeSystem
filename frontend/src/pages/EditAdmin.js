@@ -8,6 +8,7 @@ const EditAdmin = () => {
   const [msg, setMsg] = useState('');
   const user = JSON.parse(localStorage.getItem('user'));
   const navigate = useNavigate();
+  const [initialRender, setInitialRender] = useState(true);
 
   useEffect(() => {
     const fetchdetails = async () => {
@@ -28,8 +29,13 @@ const EditAdmin = () => {
       }
     }
 
+    if (initialRender) {
+      setInitialRender(false);
+      return;
+    }
+
     fetchdetails()
-  }, [navigate, user]);
+  }, [initialRender, navigate, user]);
 
   const handleSaveButton = async () => {
     const response = await fetch('https://college-system-pixh.onrender.com/api/admin/editAdminDetails', {
