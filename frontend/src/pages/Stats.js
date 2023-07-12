@@ -2,8 +2,12 @@ import React, { useState, useEffect } from "react";
 import { Button } from 'react-bootstrap'
 // import Chart from "chart.js/auto";
 import { Bar } from "react-chartjs-2";
+import 'chart.js/auto';
 import { useParams, useNavigate } from 'react-router-dom';
 // import { Display } from "react-bootstrap-icons";
+import { Chart } from 'chart.js';
+
+Chart.register(Chart.scaleService.getScaleConstructor('category'));
 
 const BarChart = () => {
   const { year, semester, courseName, courseCode, assignmentName } = useParams();
