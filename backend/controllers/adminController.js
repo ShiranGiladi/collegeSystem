@@ -251,11 +251,14 @@ const addCourseToUser = async (req, res) => {
         let user;
 
         // Validate that all fields are complete
-        if(!userId.trim() || !courseName.trim() || !courseCode.trim() || !year.trim()) {
+        if(!userId.trim() || !courseName.trim() || !courseCode.trim()) {
             return res.status(400).json({ error: 'All fields must be filled' });
         }
 
         if (userType === 'Student') {
+            if(!year.trim()) {
+                return res.status(400).json({ error: 'All fields must be filled' });
+            }
             // Check if the year contains only digits
             const yearRegex = /^\d+$/;
             if (!yearRegex.test(year)) {
