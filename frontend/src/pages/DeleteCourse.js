@@ -56,7 +56,7 @@ const DeleteCourse = () => {
     fetchCourse();
   };
 
-  const handleDeleteClick = async (name, code, year, semester) => {
+  const handleDeleteClick = async (name, code, year = 2023, semester = 'Spring') => {
     const response = await fetch(`https://college-system-pixh.onrender.com/api/admin/deleteOneCourseForUser/${userId}/${name}/${code}/${year}/${semester}`, {
       method: 'DELETE',
     });
