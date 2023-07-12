@@ -17,7 +17,7 @@ const EditAdmin = () => {
         return;
       }
 
-      const response = await fetch(`https://college-system-pixh.onrender.com/api/admin/getAdminDetails/${user.username}`);
+      const response = await fetch(`${process.env.SERVER_UR}L/api/admin/getAdminDetails/${user.username}`);
       const json = await response.json();
       
       if(response.ok) {
