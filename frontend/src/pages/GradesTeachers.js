@@ -43,7 +43,7 @@ const TeachersGradesPage = () => {
       setIsInitialRender(false);
       fetchGrades();
     }
-  }, [courseCode, courseName, navigate, user]);
+  }, [isInitialRender, courseCode, courseName, navigate, user]);
 
   const handleTableChange = (field, order) => {
     setSortField(field);
