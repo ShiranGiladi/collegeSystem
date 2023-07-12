@@ -35,7 +35,7 @@ const EditAdmin = () => {
       fetchdetails();
     }
 
-  }, [initialRender, navigate, user]);
+  }, [isInitialRender, navigate, user]);
 
   const handleSaveButton = async () => {
     const response = await fetch('https://college-system-pixh.onrender.com/api/admin/editAdminDetails', {
