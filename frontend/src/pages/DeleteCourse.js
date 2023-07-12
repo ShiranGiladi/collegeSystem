@@ -56,8 +56,12 @@ const DeleteCourse = () => {
     fetchCourse();
   };
 
-  const handleDeleteClick = async (name, code, year = 2023, semester = 'Spring') => {
-    const response = await fetch(`https://college-system-pixh.onrender.com/api/admin/deleteOneCourseForUser/${userId}/${name}/${code}/${year}/${semester}`, {
+  const handleDeleteClick = async (name, code, year, semester) => {
+    const url = year && semester
+    ? `https://college-system-pixh.onrender.com/api/admin/deleteOneCourseForUser/${userId}/${name}/${code}/${year}/${semester}`
+    : `https://college-system-pixh.onrender.com/api/admin/deleteOneCourseForUser/${userId}/${name}/${code}`;
+
+    const response = await fetch(url, {
       method: 'DELETE',
     });
     const json = await response.json();
