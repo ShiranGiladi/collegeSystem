@@ -1,0 +1,4303 @@
+[{
+		"username": "student1",
+		"password": "password1",
+		"id": "123456789",
+		"name": "John Doe",
+		"email": "johndoe@example.com",
+		"phone": "1234567890",
+		"courses": [{
+				"name": "Physics",
+				"code": "11158",
+				"year": 2023,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Homework 1",
+						"dueDate": "2023-04-15",
+						"percentage": "4%",
+						"grade": 95,
+						"type": "HW"
+					},
+					{
+						"name": "Homework 2",
+						"dueDate": "2023-04-15",
+						"percentage": "4%",
+						"grade": "Not Graded Yet",
+						"type": "HW"
+					},
+					{
+						"name": "Lab 1",
+						"dueDate": "2023-03-14",
+						"percentage": "3%",
+						"grade": 85,
+						"type": "Lab"
+					}
+				]
+			},
+			{
+				"name": "Data Mining",
+				"code": "61461",
+				"year": 2023,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Homework 1",
+						"dueDate": "2023-04-15",
+						"percentage": "4%",
+						"grade": 90,
+						"type": "HW"
+					},
+					{
+						"name": "Lab 1",
+						"dueDate": "2023-03-14",
+						"percentage": "3%",
+						"grade": 92,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 2",
+						"dueDate": "2023-03-21",
+						"percentage": "3%",
+						"grade": 88,
+						"type": "Lab"
+					}
+				]
+			},
+			{
+				"name": "Compilation",
+				"code": "61763",
+				"year": 2023,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Homework 1",
+						"dueDate": "2023-04-15",
+						"percentage": "4%",
+						"grade": 85,
+						"type": "HW"
+					},
+					{
+						"name": "Homework 2",
+						"dueDate": "2023-05-02",
+						"percentage": "4%",
+						"grade": 88,
+						"type": "HW"
+					}
+				]
+			},
+			{
+				"name": "Cloud Computing",
+				"code": "61773",
+				"year": 2023,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Lab 1",
+						"dueDate": "2023-03-14",
+						"percentage": "3%",
+						"grade": 95,
+						"type": "Lab"
+					},
+					{
+						"name": "Homework 1",
+						"dueDate": "2023-04-15",
+						"percentage": "4%",
+						"grade": 90,
+						"type": "HW"
+					},
+					{
+						"name": "Homework 2",
+						"dueDate": "2023-05-02",
+						"percentage": "4%",
+						"grade": 92,
+						"type": "HW"
+					}
+				]
+			},
+			{
+				"name": "Algorithms",
+				"code": "12345",
+				"year": 2022,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "BFS",
+						"dueDate": "2022-04-15",
+						"percentage": "4%",
+						"grade": 90,
+						"type": "HW"
+					},
+					{
+						"name": "DFS",
+						"dueDate": "2022-05-02",
+						"percentage": "4%",
+						"grade": 95,
+						"type": "HW"
+					},
+					{
+						"name": "Dijkstra",
+						"dueDate": "2022-05-21",
+						"percentage": "4%",
+						"grade": 87,
+						"type": "HW"
+					},
+					{
+						"name": "Bellman Ford",
+						"dueDate": "2022-06-10",
+						"percentage": "4%",
+						"grade": 83,
+						"type": "HW"
+					}
+				]
+			},
+			{
+				"name": "English",
+				"code": "13579",
+				"year": 2022,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Work Interview",
+						"dueDate": "2022-04-10",
+						"percentage": "4%",
+						"grade": 90,
+						"type": "HW"
+					},
+					{
+						"name": "Final Presentation",
+						"dueDate": "2022-06-21",
+						"percentage": "35%",
+						"grade": 95,
+						"type": "HW"
+					}
+				]
+			},
+			{
+				"name": "Object Oriented Programming",
+				"code": "98765",
+				"year": 2022,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Assignment 1",
+						"grade": 85,
+						"type": "HW"
+					},
+					{
+						"name": "Assignment 2",
+						"dueDate": "2022-05-03",
+						"percentage": "4%",
+						"grade": 92,
+						"type": "HW"
+					},
+					{
+						"name": "Assignment 3",
+						"dueDate": "2022-05-26",
+						"percentage": "4%",
+						"grade": 78,
+						"type": "HW"
+					},
+					{
+						"name": "Assignment 4",
+						"dueDate": "2022-06-15",
+						"percentage": "4%",
+						"grade": 88,
+						"type": "HW"
+					}
+				]
+			},
+			{
+				"name": "Database Systems",
+				"code": "67890",
+				"year": 2022,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Assignment 1",
+						"dueDate": "2022-04-15",
+						"percentage": "4%",
+						"grade": 91,
+						"type": "HW"
+					},
+					{
+						"name": "Assignment 2",
+						"dueDate": "2022-05-03",
+						"percentage": "4%",
+						"grade": 70,
+						"type": "HW"
+					},
+					{
+						"name": "Assignment 3",
+						"dueDate": "2022-05-26",
+						"percentage": "4%",
+						"grade": 95,
+						"type": "HW"
+					},
+					{
+						"name": "Assignment 4",
+						"dueDate": "2022-06-15",
+						"percentage": "4%",
+						"grade": 83,
+						"type": "HW"
+					}
+				]
+			},
+			{
+				"name": "Operating Systems",
+				"code": "54321",
+				"year": 2022,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Lab 1",
+						"dueDate": "2023-03-14",
+						"percentage": "3%",
+						"grade": 80,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 2",
+						"dueDate": "2023-03-21",
+						"percentage": "3%",
+						"grade": 85,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 3",
+						"dueDate": "2023-03-28",
+						"percentage": "3%",
+						"grade": 87,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 4",
+						"dueDate": "2023-04-26",
+						"percentage": "3%",
+						"grade": 89,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 5",
+						"dueDate": "2023-05-03",
+						"percentage": "3%",
+						"grade": 86,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 6",
+						"dueDate": "2023-05-10",
+						"percentage": "3%",
+						"grade": 90,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 7",
+						"dueDate": "2023-05-17",
+						"percentage": "3%",
+						"grade": 95,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 8",
+						"dueDate": "2023-05-24",
+						"percentage": "3%",
+						"grade": 80,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 9",
+						"dueDate": "2023-06-02",
+						"percentage": "3%",
+						"grade": 83,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 10",
+						"dueDate": "2023-06-09",
+						"percentage": "3%",
+						"grade": 84,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 11",
+						"dueDate": "2023-06-16",
+						"percentage": "3%",
+						"grade": 86,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 12",
+						"dueDate": "2023-06-23",
+						"percentage": "3%",
+						"grade": 75,
+						"type": "Lab"
+					}
+				]
+			}
+		]
+	},
+	{
+		"username": "student2",
+		"password": "password2",
+		"id": "543217897",
+		"name": "Jane Smith",
+		"email": "janesmith@example.com",
+		"phone": "9876543210",
+		"courses": [{
+				"name": "Physics",
+				"code": "11158",
+				"year": 2023,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Homework 1",
+						"dueDate": "2023-04-15",
+						"percentage": "4%",
+						"grade": 90,
+						"type": "HW"
+					},
+					{
+						"name": "Homework 2",
+						"dueDate": "2023-04-15",
+						"percentage": "4%",
+						"grade": "Not Graded Yet",
+						"type": "HW"
+					},
+					{
+						"name": "Lab 1",
+						"dueDate": "2023-03-14",
+						"percentage": "3%",
+						"grade": 80,
+						"type": "Lab"
+					}
+				]
+			},
+			{
+				"name": "Data Mining",
+				"code": "61461",
+				"year": 2023,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Homework 1",
+						"dueDate": "2023-04-15",
+						"percentage": "4%",
+						"grade": 85,
+						"type": "HW"
+					},
+					{
+						"name": "Lab 1",
+						"dueDate": "2023-03-14",
+						"percentage": "3%",
+						"grade": 88,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 2",
+						"dueDate": "2023-03-21",
+						"percentage": "3%",
+						"grade": 82,
+						"type": "Lab"
+					}
+				]
+			},
+			{
+				"name": "Compilation",
+				"code": "61763",
+				"year": 2023,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Homework 1",
+						"dueDate": "2023-04-15",
+						"percentage": "4%",
+						"grade": 78,
+						"type": "HW"
+					},
+					{
+						"name": "Homework 2",
+						"dueDate": "2023-05-02",
+						"percentage": "4%",
+						"grade": 85,
+						"type": "HW"
+					}
+				]
+			},
+			{
+				"name": "Cloud Computing",
+				"code": "61773",
+				"year": 2023,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Lab 1",
+						"dueDate": "2023-03-14",
+						"percentage": "3%",
+						"grade": 92,
+						"type": "Lab"
+					},
+					{
+						"name": "Homework 1",
+						"dueDate": "2023-04-15",
+						"percentage": "4%",
+						"grade": 87,
+						"type": "HW"
+					},
+					{
+						"name": "Homework 2",
+						"dueDate": "2023-05-02",
+						"percentage": "4%",
+						"grade": 90,
+						"type": "HW"
+					}
+				]
+			},
+			{
+				"name": "Algorithms",
+				"code": "12345",
+				"year": 2022,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "BFS",
+						"dueDate": "2022-04-15",
+						"percentage": "4%",
+						"grade": 80,
+						"type": "HW"
+					},
+					{
+						"name": "DFS",
+						"dueDate": "2022-05-02",
+						"percentage": "4%",
+						"grade": 92,
+						"type": "HW"
+					},
+					{
+						"name": "Dijkstra",
+						"dueDate": "2022-05-21",
+						"percentage": "4%",
+						"grade": 85,
+						"type": "HW"
+					},
+					{
+						"name": "Bellman Ford",
+						"dueDate": "2022-06-10",
+						"percentage": "4%",
+						"grade": 79,
+						"type": "HW"
+					}
+				]
+			},
+			{
+				"name": "English",
+				"code": "13579",
+				"year": 2022,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Work Interview",
+						"dueDate": "2022-04-10",
+						"percentage": "4%",
+						"grade": 92,
+						"type": "HW"
+					},
+					{
+						"name": "Final Presentation",
+						"dueDate": "2022-06-21",
+						"percentage": "35%",
+						"grade": 88,
+						"type": "HW"
+					}
+				]
+			},
+			{
+				"name": "Object Oriented Programming",
+				"code": "98765",
+				"year": 2022,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Assignment 1",
+						"dueDate": "2022-04-15",
+						"percentage": "4%",
+						"grade": 82,
+						"type": "HW"
+					},
+					{
+						"name": "Assignment 2",
+						"dueDate": "2022-05-03",
+						"percentage": "4%",
+						"grade": 90,
+						"type": "HW"
+					},
+					{
+						"name": "Assignment 3",
+						"dueDate": "2022-05-26",
+						"percentage": "4%",
+						"grade": 85,
+						"type": "HW"
+					},
+					{
+						"name": "Assignment 4",
+						"dueDate": "2022-06-15",
+						"percentage": "4%",
+						"grade": 92,
+						"type": "HW"
+					}
+				]
+			},
+			{
+				"name": "Database Systems",
+				"code": "67890",
+				"year": 2022,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Assignment 1",
+						"dueDate": "2022-04-15",
+						"percentage": "4%",
+						"grade": 87,
+						"type": "HW"
+					},
+					{
+						"name": "Assignment 2",
+						"dueDate": "2022-05-03",
+						"percentage": "4%",
+						"grade": 76,
+						"type": "HW"
+					},
+					{
+						"name": "Assignment 3",
+						"dueDate": "2022-05-26",
+						"percentage": "4%",
+						"grade": 92,
+						"type": "HW"
+					},
+					{
+						"name": "Assignment 4",
+						"dueDate": "2022-06-15",
+						"percentage": "4%",
+						"grade": 80,
+						"type": "HW"
+					}
+				]
+			},
+			{
+				"name": "Operating Systems",
+				"code": "54321",
+				"year": 2022,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Lab 1",
+						"dueDate": "2023-03-14",
+						"percentage": "3%",
+						"grade": 78,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 2",
+						"dueDate": "2023-03-21",
+						"percentage": "3%",
+						"grade": 82,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 3",
+						"dueDate": "2023-03-28",
+						"percentage": "3%",
+						"grade": 85,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 4",
+						"dueDate": "2023-04-26",
+						"percentage": "3%",
+						"grade": 87,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 5",
+						"dueDate": "2023-05-03",
+						"percentage": "3%",
+						"grade": 82,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 6",
+						"dueDate": "2023-05-10",
+						"percentage": "3%",
+						"grade": 88,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 7",
+						"dueDate": "2023-05-17",
+						"percentage": "3%",
+						"grade": 92,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 8",
+						"dueDate": "2023-05-24",
+						"percentage": "3%",
+						"grade": 78,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 9",
+						"dueDate": "2023-06-02",
+						"percentage": "3%",
+						"grade": 82,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 10",
+						"dueDate": "2023-06-09",
+						"percentage": "3%",
+						"grade": 85,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 11",
+						"dueDate": "2023-06-16",
+						"percentage": "3%",
+						"grade": 88,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 12",
+						"dueDate": "2023-06-23",
+						"percentage": "3%",
+						"grade": 76,
+						"type": "Lab"
+					}
+				]
+			}
+		]
+	},
+	{
+		"username": "student3",
+		"password": "password3",
+		"id": "678901231",
+		"name": "Sarah Johnson",
+		"email": "sarahjohnson@example.com",
+		"phone": "5551234567",
+		"courses": [{
+				"name": "Physics",
+				"code": "11158",
+				"year": 2023,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Homework 1",
+						"dueDate": "2023-04-15",
+						"percentage": "4%",
+						"grade": 88,
+						"type": "HW"
+					},
+					{
+						"name": "Homework 2",
+						"dueDate": "2023-04-15",
+						"percentage": "4%",
+						"grade": "Not Graded Yet",
+						"type": "HW"
+					},
+					{
+						"name": "Lab 1",
+						"dueDate": "2023-03-14",
+						"percentage": "3%",
+						"grade": 92,
+						"type": "Lab"
+					}
+				]
+			},
+			{
+				"name": "Data Mining",
+				"code": "61461",
+				"year": 2023,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Homework 1",
+						"dueDate": "2023-04-15",
+						"percentage": "4%",
+						"grade": 92,
+						"type": "HW"
+					},
+					{
+						"name": "Lab 1",
+						"dueDate": "2023-03-14",
+						"percentage": "3%",
+						"grade": 85,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 2",
+						"dueDate": "2023-03-21",
+						"percentage": "3%",
+						"grade": 90,
+						"type": "Lab"
+					}
+				]
+			},
+			{
+				"name": "Compilation",
+				"code": "61763",
+				"year": 2023,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Homework 1",
+						"dueDate": "2023-04-15",
+						"percentage": "4%",
+						"grade": 85,
+						"type": "HW"
+					},
+					{
+						"name": "Homework 2",
+						"dueDate": "2023-05-02",
+						"percentage": "4%",
+						"grade": 88,
+						"type": "HW"
+					}
+				]
+			},
+			{
+				"name": "Cloud Computing",
+				"code": "61773",
+				"year": 2023,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Lab 1",
+						"dueDate": "2023-03-14",
+						"percentage": "3%",
+						"grade": 95,
+						"type": "Lab"
+					},
+					{
+						"name": "Homework 1",
+						"dueDate": "2023-04-15",
+						"percentage": "4%",
+						"grade": 90,
+						"type": "HW"
+					},
+					{
+						"name": "Homework 2",
+						"dueDate": "2023-05-02",
+						"percentage": "4%",
+						"grade": 92,
+						"type": "HW"
+					}
+				]
+			},
+			{
+				"name": "Algorithms",
+				"code": "12345",
+				"year": 2022,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "BFS",
+						"dueDate": "2022-04-15",
+						"percentage": "4%",
+						"grade": 88,
+						"type": "HW"
+					},
+					{
+						"name": "DFS",
+						"dueDate": "2022-05-02",
+						"percentage": "4%",
+						"grade": 90,
+						"type": "HW"
+					},
+					{
+						"name": "Dijkstra",
+						"dueDate": "2022-05-21",
+						"percentage": "4%",
+						"grade": 82,
+						"type": "HW"
+					},
+					{
+						"name": "Bellman Ford",
+						"dueDate": "2022-06-10",
+						"percentage": "4%",
+						"grade": 85,
+						"type": "HW"
+					}
+				]
+			},
+			{
+				"name": "English",
+				"code": "13579",
+				"year": 2022,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Work Interview",
+						"dueDate": "2022-04-10",
+						"percentage": "4%",
+						"grade": 92,
+						"type": "HW"
+					},
+					{
+						"name": "Final Presentation",
+						"dueDate": "2022-06-21",
+						"percentage": "35%",
+						"grade": 88,
+						"type": "HW"
+					}
+				]
+			},
+			{
+				"name": "Object Oriented Programming",
+				"code": "98765",
+				"year": 2022,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Assignment 1",
+						"dueDate": "2022-04-15",
+						"percentage": "4%",
+						"grade": 78,
+						"type": "HW"
+					},
+					{
+						"name": "Assignment 2",
+						"dueDate": "2022-05-03",
+						"percentage": "4%",
+						"grade": 85,
+						"type": "HW"
+					},
+					{
+						"name": "Assignment 3",
+						"dueDate": "2022-05-26",
+						"percentage": "4%",
+						"grade": 92,
+						"type": "HW"
+					},
+					{
+						"name": "Assignment 4",
+						"dueDate": "2022-06-15",
+						"percentage": "4%",
+						"grade": 80,
+						"type": "HW"
+					}
+				]
+			},
+			{
+				"name": "Database Systems",
+				"code": "67890",
+				"year": 2022,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Assignment 1",
+						"dueDate": "2022-04-15",
+						"percentage": "4%",
+						"grade": 86,
+						"type": "HW"
+					},
+					{
+						"name": "Assignment 2",
+						"dueDate": "2022-05-03",
+						"percentage": "4%",
+						"grade": 78,
+						"type": "HW"
+					},
+					{
+						"name": "Assignment 3",
+						"dueDate": "2022-05-26",
+						"percentage": "4%",
+						"grade": 92,
+						"type": "HW"
+					},
+					{
+						"name": "Assignment 4",
+						"dueDate": "2022-06-15",
+						"percentage": "4%",
+						"grade": 84,
+						"type": "HW"
+					}
+				]
+			},
+			{
+				"name": "Operating Systems",
+				"code": "54321",
+				"year": 2022,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Lab 1",
+						"dueDate": "2023-03-14",
+						"percentage": "3%",
+						"grade": 82,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 2",
+						"dueDate": "2023-03-21",
+						"percentage": "3%",
+						"grade": 85,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 3",
+						"dueDate": "2023-03-28",
+						"percentage": "3%",
+						"grade": 88,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 4",
+						"dueDate": "2023-04-26",
+						"percentage": "3%",
+						"grade": 80,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 5",
+						"dueDate": "2023-05-03",
+						"percentage": "3%",
+						"grade": 85,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 6",
+						"dueDate": "2023-05-10",
+						"percentage": "3%",
+						"grade": 92,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 7",
+						"dueDate": "2023-05-17",
+						"percentage": "3%",
+						"grade": 78,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 8",
+						"dueDate": "2023-05-24",
+						"percentage": "3%",
+						"grade": 82,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 9",
+						"dueDate": "2023-06-02",
+						"percentage": "3%",
+						"grade": 85,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 10",
+						"dueDate": "2023-06-09",
+						"percentage": "3%",
+						"grade": 88,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 11",
+						"dueDate": "2023-06-16",
+						"percentage": "3%",
+						"grade": 76,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 12",
+						"dueDate": "2023-06-23",
+						"percentage": "3%",
+						"grade": 82,
+						"type": "Lab"
+					}
+				]
+			}
+		]
+	},
+	{
+		"username": "student4",
+		"password": "password4",
+		"id": "543211471",
+		"name": "Emily Wilson",
+		"email": "emilywilson@example.com",
+		"phone": "5559876543",
+		"courses": [{
+				"name": "Physics",
+				"code": "11158",
+				"year": 2023,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Homework 1",
+						"dueDate": "2023-04-15",
+						"percentage": "4%",
+						"grade": 90,
+						"type": "HW"
+					},
+					{
+						"name": "Homework 2",
+						"dueDate": "2023-04-15",
+						"percentage": "4%",
+						"grade": "Not Graded Yet",
+						"type": "HW"
+					},
+					{
+						"name": "Lab 1",
+						"dueDate": "2023-03-14",
+						"percentage": "3%",
+						"grade": 92,
+						"type": "Lab"
+					}
+				]
+			},
+			{
+				"name": "Data Mining",
+				"code": "61461",
+				"year": 2023,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Homework 1",
+						"dueDate": "2023-04-15",
+						"percentage": "4%",
+						"grade": 92,
+						"type": "HW"
+					},
+					{
+						"name": "Lab 1",
+						"dueDate": "2023-03-14",
+						"percentage": "3%",
+						"grade": 85,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 2",
+						"dueDate": "2023-03-21",
+						"percentage": "3%",
+						"grade": 90,
+						"type": "Lab"
+					}
+				]
+			},
+			{
+				"name": "Compilation",
+				"code": "61763",
+				"year": 2023,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Homework 1",
+						"dueDate": "2023-04-15",
+						"percentage": "4%",
+						"grade": 85,
+						"type": "HW"
+					},
+					{
+						"name": "Homework 2",
+						"dueDate": "2023-05-02",
+						"percentage": "4%",
+						"grade": 88,
+						"type": "HW"
+					}
+				]
+			},
+			{
+				"name": "Cloud Computing",
+				"code": "61773",
+				"year": 2023,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Lab 1",
+						"dueDate": "2023-03-14",
+						"percentage": "3%",
+						"grade": 95,
+						"type": "Lab"
+					},
+					{
+						"name": "Homework 1",
+						"dueDate": "2023-04-15",
+						"percentage": "4%",
+						"grade": 90,
+						"type": "HW"
+					},
+					{
+						"name": "Homework 2",
+						"dueDate": "2023-05-02",
+						"percentage": "4%",
+						"grade": 92,
+						"type": "HW"
+					}
+				]
+			},
+			{
+				"name": "Algorithms",
+				"code": "12345",
+				"year": 2022,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "BFS",
+						"dueDate": "2022-04-15",
+						"percentage": "4%",
+						"grade": 88,
+						"type": "HW"
+					},
+					{
+						"name": "DFS",
+						"dueDate": "2022-05-02",
+						"percentage": "4%",
+						"grade": 90,
+						"type": "HW"
+					},
+					{
+						"name": "Dijkstra",
+						"dueDate": "2022-05-21",
+						"percentage": "4%",
+						"grade": 82,
+						"type": "HW"
+					},
+					{
+						"name": "Bellman Ford",
+						"dueDate": "2022-06-10",
+						"percentage": "4%",
+						"grade": 85,
+						"type": "HW"
+					}
+				]
+			},
+			{
+				"name": "English",
+				"code": "13579",
+				"year": 2022,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Work Interview",
+						"dueDate": "2022-04-10",
+						"percentage": "4%",
+						"grade": 92,
+						"type": "HW"
+					},
+					{
+						"name": "Final Presentation",
+						"dueDate": "2022-06-21",
+						"percentage": "35%",
+						"grade": 88,
+						"type": "HW"
+					}
+				]
+			},
+			{
+				"name": "Object Oriented Programming",
+				"code": "98765",
+				"year": 2022,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Assignment 1",
+						"dueDate": "2022-04-15",
+						"percentage": "4%",
+						"grade": 85,
+						"type": "HW"
+					},
+					{
+						"name": "Assignment 2",
+						"dueDate": "2022-05-03",
+						"percentage": "4%",
+						"grade": 92,
+						"type": "HW"
+					},
+					{
+						"name": "Assignment 3",
+						"dueDate": "2022-05-26",
+						"percentage": "4%",
+						"grade": 78,
+						"type": "HW"
+					},
+					{
+						"name": "Assignment 4",
+						"dueDate": "2022-06-15",
+						"percentage": "4%",
+						"grade": 88,
+						"type": "HW"
+					}
+				]
+			},
+			{
+				"name": "Database Systems",
+				"code": "67890",
+				"year": 2022,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Assignment 1",
+						"dueDate": "2022-04-15",
+						"percentage": "4%",
+						"grade": 86,
+						"type": "HW"
+					},
+					{
+						"name": "Assignment 2",
+						"dueDate": "2022-05-03",
+						"percentage": "4%",
+						"grade": 78,
+						"type": "HW"
+					},
+					{
+						"name": "Assignment 3",
+						"dueDate": "2022-05-26",
+						"percentage": "4%",
+						"grade": 92,
+						"type": "HW"
+					},
+					{
+						"name": "Assignment 4",
+						"dueDate": "2022-06-15",
+						"percentage": "4%",
+						"grade": 84,
+						"type": "HW"
+					}
+				]
+			},
+			{
+				"name": "Operating Systems",
+				"code": "54321",
+				"year": 2022,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Lab 1",
+						"dueDate": "2023-03-14",
+						"percentage": "3%",
+						"grade": 82,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 2",
+						"dueDate": "2023-03-21",
+						"percentage": "3%",
+						"grade": 85,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 3",
+						"dueDate": "2023-03-28",
+						"percentage": "3%",
+						"grade": 88,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 4",
+						"dueDate": "2023-04-26",
+						"percentage": "3%",
+						"grade": 80,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 5",
+						"dueDate": "2023-05-03",
+						"percentage": "3%",
+						"grade": 85,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 6",
+						"dueDate": "2023-05-10",
+						"percentage": "3%",
+						"grade": 92,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 7",
+						"dueDate": "2023-05-17",
+						"percentage": "3%",
+						"grade": 78,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 8",
+						"dueDate": "2023-05-24",
+						"percentage": "3%",
+						"grade": 82,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 9",
+						"dueDate": "2023-06-02",
+						"percentage": "3%",
+						"grade": 85,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 10",
+						"dueDate": "2023-06-09",
+						"percentage": "3%",
+						"grade": 88,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 11",
+						"dueDate": "2023-06-16",
+						"percentage": "3%",
+						"grade": 76,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 12",
+						"dueDate": "2023-06-23",
+						"percentage": "3%",
+						"grade": 82,
+						"type": "Lab"
+					}
+				]
+			}
+		]
+	},
+	{
+		"username": "student5",
+		"password": "password5",
+		"id": "987651111",
+		"name": "Sarah Thompson",
+		"email": "sarahthompson@example.com",
+		"phone": "5551234567",
+		"courses": [{
+				"name": "Physics",
+				"code": "11158",
+				"year": 2023,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Homework 1",
+						"dueDate": "2023-04-15",
+						"percentage": "4%",
+						"grade": 92,
+						"type": "HW"
+					},
+					{
+						"name": "Homework 2",
+						"dueDate": "2023-04-15",
+						"percentage": "4%",
+						"grade": "Not Graded Yet",
+						"type": "HW"
+					},
+					{
+						"name": "Lab 1",
+						"dueDate": "2023-03-14",
+						"percentage": "3%",
+						"grade": 88,
+						"type": "Lab"
+					}
+				]
+			},
+			{
+				"name": "Data Mining",
+				"code": "61461",
+				"year": 2023,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Homework 1",
+						"dueDate": "2023-04-15",
+						"percentage": "4%",
+						"grade": 85,
+						"type": "HW"
+					},
+					{
+						"name": "Lab 1",
+						"dueDate": "2023-03-14",
+						"percentage": "3%",
+						"grade": 90,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 2",
+						"dueDate": "2023-03-21",
+						"percentage": "3%",
+						"grade": 92,
+						"type": "Lab"
+					}
+				]
+			},
+			{
+				"name": "Compilation",
+				"code": "61763",
+				"year": 2023,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Homework 1",
+						"dueDate": "2023-04-15",
+						"percentage": "4%",
+						"grade": 90,
+						"type": "HW"
+					},
+					{
+						"name": "Homework 2",
+						"dueDate": "2023-05-02",
+						"percentage": "4%",
+						"grade": 92,
+						"type": "HW"
+					}
+				]
+			},
+			{
+				"name": "Cloud Computing",
+				"code": "61773",
+				"year": 2023,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Lab 1",
+						"dueDate": "2023-03-14",
+						"percentage": "3%",
+						"grade": 95,
+						"type": "Lab"
+					},
+					{
+						"name": "Homework 1",
+						"dueDate": "2023-04-15",
+						"percentage": "4%",
+						"grade": 88,
+						"type": "HW"
+					},
+					{
+						"name": "Homework 2",
+						"dueDate": "2023-05-02",
+						"percentage": "4%",
+						"grade": 90,
+						"type": "HW"
+					}
+				]
+			},
+			{
+				"name": "Algorithms",
+				"code": "12345",
+				"year": 2022,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "BFS",
+						"dueDate": "2022-04-15",
+						"percentage": "4%",
+						"grade": 85,
+						"type": "HW"
+					},
+					{
+						"name": "DFS",
+						"dueDate": "2022-05-02",
+						"percentage": "4%",
+						"grade": 92,
+						"type": "HW"
+					},
+					{
+						"name": "Dijkstra",
+						"dueDate": "2022-05-21",
+						"percentage": "4%",
+						"grade": 90,
+						"type": "HW"
+					},
+					{
+						"name": "Bellman Ford",
+						"dueDate": "2022-06-10",
+						"percentage": "4%",
+						"grade": 88,
+						"type": "HW"
+					}
+				]
+			},
+			{
+				"name": "English",
+				"code": "13579",
+				"year": 2022,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Work Interview",
+						"dueDate": "2022-04-10",
+						"percentage": "4%",
+						"grade": 90,
+						"type": "HW"
+					},
+					{
+						"name": "Final Presentation",
+						"dueDate": "2022-06-21",
+						"percentage": "35%",
+						"grade": 92,
+						"type": "HW"
+					}
+				]
+			},
+			{
+				"name": "Object Oriented Programming",
+				"code": "98765",
+				"year": 2022,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Assignment 1",
+						"dueDate": "2022-04-15",
+						"percentage": "4%",
+						"grade": 85,
+						"type": "HW"
+					},
+					{
+						"name": "Assignment 2",
+						"dueDate": "2022-05-03",
+						"percentage": "4%",
+						"grade": 90,
+						"type": "HW"
+					},
+					{
+						"name": "Assignment 3",
+						"dueDate": "2022-05-26",
+						"percentage": "4%",
+						"grade": 88,
+						"type": "HW"
+					},
+					{
+						"name": "Assignment 4",
+						"dueDate": "2022-06-15",
+						"percentage": "4%",
+						"grade": 92,
+						"type": "HW"
+					}
+				]
+			},
+			{
+				"name": "Database Systems",
+				"code": "67890",
+				"year": 2022,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Assignment 1",
+						"dueDate": "2022-04-15",
+						"percentage": "4%",
+						"grade": 92,
+						"type": "HW"
+					},
+					{
+						"name": "Assignment 2",
+						"dueDate": "2022-05-03",
+						"percentage": "4%",
+						"grade": 85,
+						"type": "HW"
+					},
+					{
+						"name": "Assignment 3",
+						"dueDate": "2022-05-26",
+						"percentage": "4%",
+						"grade": 90,
+						"type": "HW"
+					},
+					{
+						"name": "Assignment 4",
+						"dueDate": "2022-06-15",
+						"percentage": "4%",
+						"grade": 88,
+						"type": "HW"
+					}
+				]
+			},
+			{
+				"name": "Operating Systems",
+				"code": "54321",
+				"year": 2022,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Lab 1",
+						"dueDate": "2023-03-14",
+						"percentage": "3%",
+						"grade": 88,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 2",
+						"dueDate": "2023-03-21",
+						"percentage": "3%",
+						"grade": 92,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 3",
+						"dueDate": "2023-03-28",
+						"percentage": "3%",
+						"grade": 85,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 4",
+						"dueDate": "2023-04-26",
+						"percentage": "3%",
+						"grade": 90,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 5",
+						"dueDate": "2023-05-03",
+						"percentage": "3%",
+						"grade": 86,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 6",
+						"dueDate": "2023-05-10",
+						"percentage": "3%",
+						"grade": 92,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 7",
+						"dueDate": "2023-05-17",
+						"percentage": "3%",
+						"grade": 88,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 8",
+						"dueDate": "2023-05-24",
+						"percentage": "3%",
+						"grade": 85,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 9",
+						"dueDate": "2023-06-02",
+						"percentage": "3%",
+						"grade": 90,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 10",
+						"dueDate": "2023-06-09",
+						"percentage": "3%",
+						"grade": 92,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 11",
+						"dueDate": "2023-06-16",
+						"percentage": "3%",
+						"grade": 88,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 12",
+						"dueDate": "2023-06-23",
+						"percentage": "3%",
+						"grade": 85,
+						"type": "Lab"
+					}
+				]
+			}
+		]
+	},
+	{
+		"username": "student6",
+		"password": "password6",
+		"id": "543214444",
+		"name": "Emily Johnson",
+		"email": "emilyjohnson@example.com",
+		"phone": "5559876543",
+		"courses": [{
+				"name": "Physics",
+				"code": "11158",
+				"year": 2023,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Homework 1",
+						"dueDate": "2023-04-15",
+						"percentage": "4%",
+						"grade": 60,
+						"type": "HW"
+					},
+					{
+						"name": "Homework 2",
+						"dueDate": "2023-04-15",
+						"percentage": "4%",
+						"grade": "Not Graded Yet",
+						"type": "HW"
+					},
+					{
+						"name": "Lab 1",
+						"dueDate": "2023-03-14",
+						"percentage": "3%",
+						"grade": 62,
+						"type": "Lab"
+					}
+				]
+			},
+			{
+				"name": "Data Mining",
+				"code": "61461",
+				"year": 2023,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Homework 1",
+						"dueDate": "2023-04-15",
+						"percentage": "4%",
+						"grade": 65,
+						"type": "HW"
+					},
+					{
+						"name": "Lab 1",
+						"dueDate": "2023-03-14",
+						"percentage": "3%",
+						"grade": 68,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 2",
+						"dueDate": "2023-03-21",
+						"percentage": "3%",
+						"grade": 70,
+						"type": "Lab"
+					}
+				]
+			},
+			{
+				"name": "Compilation",
+				"code": "61763",
+				"year": 2023,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Homework 1",
+						"dueDate": "2023-04-15",
+						"percentage": "4%",
+						"grade": 58,
+						"type": "HW"
+					},
+					{
+						"name": "Homework 2",
+						"dueDate": "2023-05-02",
+						"percentage": "4%",
+						"grade": 62,
+						"type": "HW"
+					}
+				]
+			},
+			{
+				"name": "Cloud Computing",
+				"code": "61773",
+				"year": 2023,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Lab 1",
+						"dueDate": "2023-03-14",
+						"percentage": "3%",
+						"grade": 70,
+						"type": "Lab"
+					},
+					{
+						"name": "Homework 1",
+						"dueDate": "2023-04-15",
+						"percentage": "4%",
+						"grade": 65,
+						"type": "HW"
+					},
+					{
+						"name": "Homework 2",
+						"dueDate": "2023-05-02",
+						"percentage": "4%",
+						"grade": 58,
+						"type": "HW"
+					}
+				]
+			},
+			{
+				"name": "Algorithms",
+				"code": "12345",
+				"year": 2022,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "BFS",
+						"dueDate": "2022-04-15",
+						"percentage": "4%",
+						"grade": 60,
+						"type": "HW"
+					},
+					{
+						"name": "DFS",
+						"dueDate": "2022-05-02",
+						"percentage": "4%",
+						"grade": 62,
+						"type": "HW"
+					},
+					{
+						"name": "Dijkstra",
+						"dueDate": "2022-05-21",
+						"percentage": "4%",
+						"grade": 68,
+						"type": "HW"
+					},
+					{
+						"name": "Bellman Ford",
+						"dueDate": "2022-06-10",
+						"percentage": "4%",
+						"grade": 70,
+						"type": "HW"
+					}
+				]
+			},
+			{
+				"name": "English",
+				"code": "13579",
+				"year": 2022,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Work Interview",
+						"dueDate": "2022-04-10",
+						"percentage": "4%",
+						"grade": 65,
+						"type": "HW"
+					},
+					{
+						"name": "Final Presentation",
+						"dueDate": "2022-06-21",
+						"percentage": "35%",
+						"grade": 68,
+						"type": "HW"
+					}
+				]
+			},
+			{
+				"name": "Object Oriented Programming",
+				"code": "98765",
+				"year": 2022,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Assignment 1",
+						"dueDate": "2022-04-15",
+						"percentage": "4%",
+						"grade": 70,
+						"type": "HW"
+					},
+					{
+						"name": "Assignment 2",
+						"dueDate": "2022-05-03",
+						"percentage": "4%",
+						"grade": 62,
+						"type": "HW"
+					},
+					{
+						"name": "Assignment 3",
+						"dueDate": "2022-05-26",
+						"percentage": "4%",
+						"grade": 58,
+						"type": "HW"
+					},
+					{
+						"name": "Assignment 4",
+						"dueDate": "2022-06-15",
+						"percentage": "4%",
+						"grade": 65,
+						"type": "HW"
+					}
+				]
+			},
+			{
+				"name": "Database Systems",
+				"code": "67890",
+				"year": 2022,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Assignment 1",
+						"dueDate": "2022-04-15",
+						"percentage": "4%",
+						"grade": 62,
+						"type": "HW"
+					},
+					{
+						"name": "Assignment 2",
+						"dueDate": "2022-05-03",
+						"percentage": "4%",
+						"grade": 70,
+						"type": "HW"
+					},
+					{
+						"name": "Assignment 3",
+						"dueDate": "2022-05-26",
+						"percentage": "4%",
+						"grade": 65,
+						"type": "HW"
+					},
+					{
+						"name": "Assignment 4",
+						"dueDate": "2022-06-15",
+						"percentage": "4%",
+						"grade": 58,
+						"type": "HW"
+					}
+				]
+			},
+			{
+				"name": "Operating Systems",
+				"code": "54321",
+				"year": 2022,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Lab 1",
+						"dueDate": "2023-03-14",
+						"percentage": "3%",
+						"grade": 68,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 2",
+						"dueDate": "2023-03-21",
+						"percentage": "3%",
+						"grade": 70,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 3",
+						"dueDate": "2023-03-28",
+						"percentage": "3%",
+						"grade": 62,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 4",
+						"dueDate": "2023-04-26",
+						"percentage": "3%",
+						"grade": 65,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 5",
+						"dueDate": "2023-05-03",
+						"percentage": "3%",
+						"grade": 58,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 6",
+						"dueDate": "2023-05-10",
+						"percentage": "3%",
+						"grade": 70,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 7",
+						"dueDate": "2023-05-17",
+						"percentage": "3%",
+						"grade": 62,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 8",
+						"dueDate": "2023-05-24",
+						"percentage": "3%",
+						"grade": 65,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 9",
+						"dueDate": "2023-06-02",
+						"percentage": "3%",
+						"grade": 58,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 10",
+						"dueDate": "2023-06-09",
+						"percentage": "3%",
+						"grade": 70,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 11",
+						"dueDate": "2023-06-16",
+						"percentage": "3%",
+						"grade": 62,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 12",
+						"dueDate": "2023-06-23",
+						"percentage": "3%",
+						"grade": 65,
+						"type": "Lab"
+					}
+				]
+			}
+		]
+	},
+	{
+		"username": "student7",
+		"password": "password7",
+		"id": "987659999",
+		"name": "Oliver Smith",
+		"email": "oliversmith@example.com",
+		"phone": "5551234567",
+		"courses": [{
+				"name": "Physics",
+				"code": "11158",
+				"year": 2023,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Homework 1",
+						"dueDate": "2023-04-15",
+						"percentage": "4%",
+						"grade": 45,
+						"type": "HW"
+					},
+					{
+						"name": "Homework 2",
+						"dueDate": "2023-04-15",
+						"percentage": "4%",
+						"grade": "Not Graded Yet",
+						"type": "HW"
+					},
+					{
+						"name": "Lab 1",
+						"dueDate": "2023-03-14",
+						"percentage": "3%",
+						"grade": 62,
+						"type": "Lab"
+					}
+				]
+			},
+			{
+				"name": "Data Mining",
+				"code": "61461",
+				"year": 2023,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Homework 1",
+						"dueDate": "2023-04-15",
+						"percentage": "4%",
+						"grade": 80,
+						"type": "HW"
+					},
+					{
+						"name": "Lab 1",
+						"dueDate": "2023-03-14",
+						"percentage": "3%",
+						"grade": 75,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 2",
+						"dueDate": "2023-03-21",
+						"percentage": "3%",
+						"grade": 52,
+						"type": "Lab"
+					}
+				]
+			},
+			{
+				"name": "Compilation",
+				"code": "61763",
+				"year": 2023,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Homework 1",
+						"dueDate": "2023-04-15",
+						"percentage": "4%",
+						"grade": 58,
+						"type": "HW"
+					},
+					{
+						"name": "Homework 2",
+						"dueDate": "2023-05-02",
+						"percentage": "4%",
+						"grade": 65,
+						"type": "HW"
+					}
+				]
+			},
+			{
+				"name": "Cloud Computing",
+				"code": "61773",
+				"year": 2023,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Lab 1",
+						"dueDate": "2023-03-14",
+						"percentage": "3%",
+						"grade": 80,
+						"type": "Lab"
+					},
+					{
+						"name": "Homework 1",
+						"dueDate": "2023-04-15",
+						"percentage": "4%",
+						"grade": 48,
+						"type": "HW"
+					},
+					{
+						"name": "Homework 2",
+						"dueDate": "2023-05-02",
+						"percentage": "4%",
+						"grade": 73,
+						"type": "HW"
+					}
+				]
+			},
+			{
+				"name": "Algorithms",
+				"code": "12345",
+				"year": 2022,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "BFS",
+						"dueDate": "2022-04-15",
+						"percentage": "4%",
+						"grade": 52,
+						"type": "HW"
+					},
+					{
+						"name": "DFS",
+						"dueDate": "2022-05-02",
+						"percentage": "4%",
+						"grade": 65,
+						"type": "HW"
+					},
+					{
+						"name": "Dijkstra",
+						"dueDate": "2022-05-21",
+						"percentage": "4%",
+						"grade": 80,
+						"type": "HW"
+					},
+					{
+						"name": "Bellman Ford",
+						"dueDate": "2022-06-10",
+						"percentage": "4%",
+						"grade": 45,
+						"type": "HW"
+					}
+				]
+			},
+			{
+				"name": "English",
+				"code": "13579",
+				"year": 2022,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Work Interview",
+						"dueDate": "2022-04-10",
+						"percentage": "4%",
+						"grade": 68,
+						"type": "HW"
+					},
+					{
+						"name": "Final Presentation",
+						"dueDate": "2022-06-21",
+						"percentage": "35%",
+						"grade": 75,
+						"type": "HW"
+					}
+				]
+			},
+			{
+				"name": "Object Oriented Programming",
+				"code": "98765",
+				"year": 2022,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Assignment 1",
+						"dueDate": "2022-04-15",
+						"percentage": "4%",
+						"grade": 45,
+						"type": "HW"
+					},
+					{
+						"name": "Assignment 2",
+						"dueDate": "2022-05-03",
+						"percentage": "4%",
+						"grade": 62,
+						"type": "HW"
+					},
+					{
+						"name": "Assignment 3",
+						"dueDate": "2022-05-26",
+						"percentage": "4%",
+						"grade": 80,
+						"type": "HW"
+					},
+					{
+						"name": "Assignment 4",
+						"dueDate": "2022-06-15",
+						"percentage": "4%",
+						"grade": 52,
+						"type": "HW"
+					}
+				]
+			},
+			{
+				"name": "Database Systems",
+				"code": "67890",
+				"year": 2022,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Assignment 1",
+						"dueDate": "2022-04-15",
+						"percentage": "4%",
+						"grade": 73,
+						"type": "HW"
+					},
+					{
+						"name": "Assignment 2",
+						"dueDate": "2022-05-03",
+						"percentage": "4%",
+						"grade": 48,
+						"type": "HW"
+					},
+					{
+						"name": "Assignment 3",
+						"dueDate": "2022-05-26",
+						"percentage": "4%",
+						"grade": 80,
+						"type": "HW"
+					},
+					{
+						"name": "Assignment 4",
+						"dueDate": "2022-06-15",
+						"percentage": "4%",
+						"grade": 58,
+						"type": "HW"
+					}
+				]
+			},
+			{
+				"name": "Operating Systems",
+				"code": "54321",
+				"year": 2022,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Lab 1",
+						"dueDate": "2023-03-14",
+						"percentage": "3%",
+						"grade": 65,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 2",
+						"dueDate": "2023-03-21",
+						"percentage": "3%",
+						"grade": 45,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 3",
+						"dueDate": "2023-03-28",
+						"percentage": "3%",
+						"grade": 58,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 4",
+						"dueDate": "2023-04-26",
+						"percentage": "3%",
+						"grade": 73,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 5",
+						"dueDate": "2023-05-03",
+						"percentage": "3%",
+						"grade": 80,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 6",
+						"dueDate": "2023-05-10",
+						"percentage": "3%",
+						"grade": 52,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 7",
+						"dueDate": "2023-05-17",
+						"percentage": "3%",
+						"grade": 68,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 8",
+						"dueDate": "2023-05-24",
+						"percentage": "3%",
+						"grade": 75,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 9",
+						"dueDate": "2023-06-02",
+						"percentage": "3%",
+						"grade": 45,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 10",
+						"dueDate": "2023-06-09",
+						"percentage": "3%",
+						"grade": 62,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 11",
+						"dueDate": "2023-06-16",
+						"percentage": "3%",
+						"grade": 80,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 12",
+						"dueDate": "2023-06-23",
+						"percentage": "3%",
+						"grade": 52,
+						"type": "Lab"
+					}
+				]
+			}
+		]
+	},
+	{
+		"username": "student8",
+		"password": "password8",
+		"id": "543217777",
+		"name": "Emma Johnson",
+		"email": "emmajohnson@example.com",
+		"phone": "5559876543",
+		"courses": [{
+				"name": "Physics",
+				"code": "11158",
+				"year": 2023,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Homework 1",
+						"dueDate": "2023-04-15",
+						"percentage": "4%",
+						"grade": 60,
+						"type": "HW"
+					},
+					{
+						"name": "Homework 2",
+						"dueDate": "2023-04-15",
+						"percentage": "4%",
+						"grade": "Not Graded Yet",
+						"type": "HW"
+					},
+					{
+						"name": "Lab 1",
+						"dueDate": "2023-03-14",
+						"percentage": "3%",
+						"grade": 55,
+						"type": "Lab"
+					}
+				]
+			},
+			{
+				"name": "Data Mining",
+				"code": "61461",
+				"year": 2023,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Homework 1",
+						"dueDate": "2023-04-15",
+						"percentage": "4%",
+						"grade": 58,
+						"type": "HW"
+					},
+					{
+						"name": "Lab 1",
+						"dueDate": "2023-03-14",
+						"percentage": "3%",
+						"grade": 62,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 2",
+						"dueDate": "2023-03-21",
+						"percentage": "3%",
+						"grade": 54,
+						"type": "Lab"
+					}
+				]
+			},
+			{
+				"name": "Compilation",
+				"code": "61763",
+				"year": 2023,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Homework 1",
+						"dueDate": "2023-04-15",
+						"percentage": "4%",
+						"grade": 63,
+						"type": "HW"
+					},
+					{
+						"name": "Homework 2",
+						"dueDate": "2023-05-02",
+						"percentage": "4%",
+						"grade": 61,
+						"type": "HW"
+					}
+				]
+			},
+			{
+				"name": "Cloud Computing",
+				"code": "61773",
+				"year": 2023,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Lab 1",
+						"dueDate": "2023-03-14",
+						"percentage": "3%",
+						"grade": 55,
+						"type": "Lab"
+					},
+					{
+						"name": "Homework 1",
+						"dueDate": "2023-04-15",
+						"percentage": "4%",
+						"grade": 59,
+						"type": "HW"
+					},
+					{
+						"name": "Homework 2",
+						"dueDate": "2023-05-02",
+						"percentage": "4%",
+						"grade": 62,
+						"type": "HW"
+					}
+				]
+			},
+			{
+				"name": "Algorithms",
+				"code": "12345",
+				"year": 2022,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "BFS",
+						"dueDate": "2022-04-15",
+						"percentage": "4%",
+						"grade": 58,
+						"type": "HW"
+					},
+					{
+						"name": "DFS",
+						"dueDate": "2022-05-02",
+						"percentage": "4%",
+						"grade": 60,
+						"type": "HW"
+					},
+					{
+						"name": "Dijkstra",
+						"dueDate": "2022-05-21",
+						"percentage": "4%",
+						"grade": 63,
+						"type": "HW"
+					},
+					{
+						"name": "Bellman Ford",
+						"dueDate": "2022-06-10",
+						"percentage": "4%",
+						"grade": 62,
+						"type": "HW"
+					}
+				]
+			},
+			{
+				"name": "English",
+				"code": "13579",
+				"year": 2022,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Work Interview",
+						"dueDate": "2022-04-10",
+						"percentage": "4%",
+						"grade": 56,
+						"type": "HW"
+					},
+					{
+						"name": "Final Presentation",
+						"dueDate": "2022-06-21",
+						"percentage": "35%",
+						"grade": 54,
+						"type": "HW"
+					}
+				]
+			},
+			{
+				"name": "Object Oriented Programming",
+				"code": "98765",
+				"year": 2022,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Assignment 1",
+						"dueDate": "2022-04-15",
+						"percentage": "4%",
+						"grade": 62,
+						"type": "HW"
+					},
+					{
+						"name": "Assignment 2",
+						"dueDate": "2022-05-03",
+						"percentage": "4%",
+						"grade": 59,
+						"type": "HW"
+					},
+					{
+						"name": "Assignment 3",
+						"dueDate": "2022-05-26",
+						"percentage": "4%",
+						"grade": 61,
+						"type": "HW"
+					},
+					{
+						"name": "Assignment 4",
+						"dueDate": "2022-06-15",
+						"percentage": "4%",
+						"grade": 58,
+						"type": "HW"
+					}
+				]
+			},
+			{
+				"name": "Database Systems",
+				"code": "67890",
+				"year": 2022,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Assignment 1",
+						"dueDate": "2022-04-15",
+						"percentage": "4%",
+						"grade": 59,
+						"type": "HW"
+					},
+					{
+						"name": "Assignment 2",
+						"dueDate": "2022-05-03",
+						"percentage": "4%",
+						"grade": 54,
+						"type": "HW"
+					},
+					{
+						"name": "Assignment 3",
+						"dueDate": "2022-05-26",
+						"percentage": "4%",
+						"grade": 63,
+						"type": "HW"
+					},
+					{
+						"name": "Assignment 4",
+						"dueDate": "2022-06-15",
+						"percentage": "4%",
+						"grade": 56,
+						"type": "HW"
+					}
+				]
+			},
+			{
+				"name": "Operating Systems",
+				"code": "54321",
+				"year": 2022,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Lab 1",
+						"dueDate": "2023-03-14",
+						"percentage": "3%",
+						"grade": 55,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 2",
+						"dueDate": "2023-03-21",
+						"percentage": "3%",
+						"grade": 61,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 3",
+						"dueDate": "2023-03-28",
+						"percentage": "3%",
+						"grade": 60,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 4",
+						"dueDate": "2023-04-26",
+						"percentage": "3%",
+						"grade": 62,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 5",
+						"dueDate": "2023-05-03",
+						"percentage": "3%",
+						"grade": 58,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 6",
+						"dueDate": "2023-05-10",
+						"percentage": "3%",
+						"grade": 64,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 7",
+						"dueDate": "2023-05-17",
+						"percentage": "3%",
+						"grade": 53,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 8",
+						"dueDate": "2023-05-24",
+						"percentage": "3%",
+						"grade": 56,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 9",
+						"dueDate": "2023-06-02",
+						"percentage": "3%",
+						"grade": 60,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 10",
+						"dueDate": "2023-06-09",
+						"percentage": "3%",
+						"grade": 59,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 11",
+						"dueDate": "2023-06-16",
+						"percentage": "3%",
+						"grade": 57,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 12",
+						"dueDate": "2023-06-23",
+						"percentage": "3%",
+						"grade": 54,
+						"type": "Lab"
+					}
+				]
+			}
+		]
+	},
+	{
+		"username": "student9",
+		"password": "password9",
+		"id": "987633335",
+		"name": "Sophia Anderson",
+		"email": "sophiaanderson@example.com",
+		"phone": "5551234567",
+		"courses": [{
+				"name": "Physics",
+				"code": "11158",
+				"year": 2023,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Homework 1",
+						"dueDate": "2023-04-15",
+						"percentage": "4%",
+						"grade": 75,
+						"type": "HW"
+					},
+					{
+						"name": "Homework 2",
+						"dueDate": "2023-04-15",
+						"percentage": "4%",
+						"grade": "Not Graded Yet",
+						"type": "HW"
+					},
+					{
+						"name": "Lab 1",
+						"dueDate": "2023-03-14",
+						"percentage": "3%",
+						"grade": 80,
+						"type": "Lab"
+					}
+				]
+			},
+			{
+				"name": "Data Mining",
+				"code": "61461",
+				"year": 2023,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Homework 1",
+						"dueDate": "2023-04-15",
+						"percentage": "4%",
+						"grade": 78,
+						"type": "HW"
+					},
+					{
+						"name": "Lab 1",
+						"dueDate": "2023-03-14",
+						"percentage": "3%",
+						"grade": 81,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 2",
+						"dueDate": "2023-03-21",
+						"percentage": "3%",
+						"grade": 77,
+						"type": "Lab"
+					}
+				]
+			},
+			{
+				"name": "Compilation",
+				"code": "61763",
+				"year": 2023,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Homework 1",
+						"dueDate": "2023-04-15",
+						"percentage": "4%",
+						"grade": 70,
+						"type": "HW"
+					},
+					{
+						"name": "Homework 2",
+						"dueDate": "2023-05-02",
+						"percentage": "4%",
+						"grade": 85,
+						"type": "HW"
+					}
+				]
+			},
+			{
+				"name": "Cloud Computing",
+				"code": "61773",
+				"year": 2023,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Lab 1",
+						"dueDate": "2023-03-14",
+						"percentage": "3%",
+						"grade": 82,
+						"type": "Lab"
+					},
+					{
+						"name": "Homework 1",
+						"dueDate": "2023-04-15",
+						"percentage": "4%",
+						"grade": 75,
+						"type": "HW"
+					},
+					{
+						"name": "Homework 2",
+						"dueDate": "2023-05-02",
+						"percentage": "4%",
+						"grade": 78,
+						"type": "HW"
+					}
+				]
+			},
+			{
+				"name": "Algorithms",
+				"code": "12345",
+				"year": 2022,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "BFS",
+						"dueDate": "2022-04-15",
+						"percentage": "4%",
+						"grade": 73,
+						"type": "HW"
+					},
+					{
+						"name": "DFS",
+						"dueDate": "2022-05-02",
+						"percentage": "4%",
+						"grade": 85,
+						"type": "HW"
+					},
+					{
+						"name": "Dijkstra",
+						"dueDate": "2022-05-21",
+						"percentage": "4%",
+						"grade": 80,
+						"type": "HW"
+					},
+					{
+						"name": "Bellman Ford",
+						"dueDate": "2022-06-10",
+						"percentage": "4%",
+						"grade": 70,
+						"type": "HW"
+					}
+				]
+			},
+			{
+				"name": "English",
+				"code": "13579",
+				"year": 2022,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Work Interview",
+						"dueDate": "2022-04-10",
+						"percentage": "4%",
+						"grade": 72,
+						"type": "HW"
+					},
+					{
+						"name": "Final Presentation",
+						"dueDate": "2022-06-21",
+						"percentage": "35%",
+						"grade": 79,
+						"type": "HW"
+					}
+				]
+			},
+			{
+				"name": "Object Oriented Programming",
+				"code": "98765",
+				"year": 2022,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Assignment 1",
+						"dueDate": "2022-04-15",
+						"percentage": "4%",
+						"grade": 85,
+						"type": "HW"
+					},
+					{
+						"name": "Assignment 2",
+						"dueDate": "2022-05-03",
+						"percentage": "4%",
+						"grade": 75,
+						"type": "HW"
+					},
+					{
+						"name": "Assignment 3",
+						"dueDate": "2022-05-26",
+						"percentage": "4%",
+						"grade": 80,
+						"type": "HW"
+					},
+					{
+						"name": "Assignment 4",
+						"dueDate": "2022-06-15",
+						"percentage": "4%",
+						"grade": 83,
+						"type": "HW"
+					}
+				]
+			},
+			{
+				"name": "Database Systems",
+				"code": "67890",
+				"year": 2022,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Assignment 1",
+						"dueDate": "2022-04-15",
+						"percentage": "4%",
+						"grade": 77,
+						"type": "HW"
+					},
+					{
+						"name": "Assignment 2",
+						"dueDate": "2022-05-03",
+						"percentage": "4%",
+						"grade": 68,
+						"type": "HW"
+					},
+					{
+						"name": "Assignment 3",
+						"dueDate": "2022-05-26",
+						"percentage": "4%",
+						"grade": 80,
+						"type": "HW"
+					},
+					{
+						"name": "Assignment 4",
+						"dueDate": "2022-06-15",
+						"percentage": "4%",
+						"grade": 72,
+						"type": "HW"
+					}
+				]
+			},
+			{
+				"name": "Operating Systems",
+				"code": "54321",
+				"year": 2022,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Lab 1",
+						"dueDate": "2023-03-14",
+						"percentage": "3%",
+						"grade": 70,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 2",
+						"dueDate": "2023-03-21",
+						"percentage": "3%",
+						"grade": 75,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 3",
+						"dueDate": "2023-03-28",
+						"percentage": "3%",
+						"grade": 80,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 4",
+						"dueDate": "2023-04-26",
+						"percentage": "3%",
+						"grade": 68,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 5",
+						"dueDate": "2023-05-03",
+						"percentage": "3%",
+						"grade": 65,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 6",
+						"dueDate": "2023-05-10",
+						"percentage": "3%",
+						"grade": 82,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 7",
+						"dueDate": "2023-05-17",
+						"percentage": "3%",
+						"grade": 77,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 8",
+						"dueDate": "2023-05-24",
+						"percentage": "3%",
+						"grade": 74,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 9",
+						"dueDate": "2023-06-02",
+						"percentage": "3%",
+						"grade": 76,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 10",
+						"dueDate": "2023-06-09",
+						"percentage": "3%",
+						"grade": 73,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 11",
+						"dueDate": "2023-06-16",
+						"percentage": "3%",
+						"grade": 57,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 12",
+						"dueDate": "2023-06-23",
+						"percentage": "3%",
+						"grade": 54,
+						"type": "Lab"
+					}
+				]
+			}
+		]
+	},
+	{
+		"username": "student10",
+		"password": "password10",
+		"id": "543217788",
+		"name": "Emily Johnson",
+		"email": "emilyjohnson@example.com",
+		"phone": "5559876543",
+		"courses": [{
+				"name": "Physics",
+				"code": "11158",
+				"year": 2023,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Homework 1",
+						"dueDate": "2023-04-15",
+						"percentage": "4%",
+						"grade": 80,
+						"type": "HW"
+					},
+					{
+						"name": "Homework 2",
+						"dueDate": "2023-04-15",
+						"percentage": "4%",
+						"grade": "Not Graded Yet",
+						"type": "HW"
+					},
+					{
+						"name": "Lab 1",
+						"dueDate": "2023-03-14",
+						"percentage": "3%",
+						"grade": 85,
+						"type": "Lab"
+					}
+				]
+			},
+			{
+				"name": "Data Mining",
+				"code": "61461",
+				"year": 2023,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Homework 1",
+						"dueDate": "2023-04-15",
+						"percentage": "4%",
+						"grade": 90,
+						"type": "HW"
+					},
+					{
+						"name": "Lab 1",
+						"dueDate": "2023-03-14",
+						"percentage": "3%",
+						"grade": 88,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 2",
+						"dueDate": "2023-03-21",
+						"percentage": "3%",
+						"grade": 87,
+						"type": "Lab"
+					}
+				]
+			},
+			{
+				"name": "Compilation",
+				"code": "61763",
+				"year": 2023,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Homework 1",
+						"dueDate": "2023-04-15",
+						"percentage": "4%",
+						"grade": 92,
+						"type": "HW"
+					},
+					{
+						"name": "Homework 2",
+						"dueDate": "2023-05-02",
+						"percentage": "4%",
+						"grade": 80,
+						"type": "HW"
+					}
+				]
+			},
+			{
+				"name": "Cloud Computing",
+				"code": "61773",
+				"year": 2023,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Lab 1",
+						"dueDate": "2023-03-14",
+						"percentage": "3%",
+						"grade": 85,
+						"type": "Lab"
+					},
+					{
+						"name": "Homework 1",
+						"dueDate": "2023-04-15",
+						"percentage": "4%",
+						"grade": 88,
+						"type": "HW"
+					},
+					{
+						"name": "Homework 2",
+						"dueDate": "2023-05-02",
+						"percentage": "4%",
+						"grade": 90,
+						"type": "HW"
+					}
+				]
+			},
+			{
+				"name": "Algorithms",
+				"code": "12345",
+				"year": 2022,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "BFS",
+						"dueDate": "2022-04-15",
+						"percentage": "4%",
+						"grade": 85,
+						"type": "HW"
+					},
+					{
+						"name": "DFS",
+						"dueDate": "2022-05-02",
+						"percentage": "4%",
+						"grade": 90,
+						"type": "HW"
+					},
+					{
+						"name": "Dijkstra",
+						"dueDate": "2022-05-21",
+						"percentage": "4%",
+						"grade": 88,
+						"type": "HW"
+					},
+					{
+						"name": "Bellman Ford",
+						"dueDate": "2022-06-10",
+						"percentage": "4%",
+						"grade": 92,
+						"type": "HW"
+					}
+				]
+			},
+			{
+				"name": "English",
+				"code": "13579",
+				"year": 2022,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Work Interview",
+						"dueDate": "2022-04-10",
+						"percentage": "4%",
+						"grade": 85,
+						"type": "HW"
+					},
+					{
+						"name": "Final Presentation",
+						"dueDate": "2022-06-21",
+						"percentage": "35%",
+						"grade": 88,
+						"type": "HW"
+					}
+				]
+			},
+			{
+				"name": "Object Oriented Programming",
+				"code": "98765",
+				"year": 2022,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Assignment 1",
+						"dueDate": "2022-04-15",
+						"percentage": "4%",
+						"grade": 90,
+						"type": "HW"
+					},
+					{
+						"name": "Assignment 2",
+						"dueDate": "2022-05-03",
+						"percentage": "4%",
+						"grade": 85,
+						"type": "HW"
+					},
+					{
+						"name": "Assignment 3",
+						"dueDate": "2022-05-26",
+						"percentage": "4%",
+						"grade": 88,
+						"type": "HW"
+					},
+					{
+						"name": "Assignment 4",
+						"dueDate": "2022-06-15",
+						"percentage": "4%",
+						"grade": 92,
+						"type": "HW"
+					}
+				]
+			},
+			{
+				"name": "Database Systems",
+				"code": "67890",
+				"year": 2022,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Assignment 1",
+						"dueDate": "2022-04-15",
+						"percentage": "4%",
+						"grade": 87,
+						"type": "HW"
+					},
+					{
+						"name": "Assignment 2",
+						"dueDate": "2022-05-03",
+						"percentage": "4%",
+						"grade": 80,
+						"type": "HW"
+					},
+					{
+						"name": "Assignment 3",
+						"dueDate": "2022-05-26",
+						"percentage": "4%",
+						"grade": 92,
+						"type": "HW"
+					},
+					{
+						"name": "Assignment 4",
+						"dueDate": "2022-06-15",
+						"percentage": "4%",
+						"grade": 85,
+						"type": "HW"
+					}
+				]
+			},
+			{
+				"name": "Operating Systems",
+				"code": "54321",
+				"year": 2022,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Lab 1",
+						"dueDate": "2023-03-14",
+						"percentage": "3%",
+						"grade": 80,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 2",
+						"dueDate": "2023-03-21",
+						"percentage": "3%",
+						"grade": 85,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 3",
+						"dueDate": "2023-03-28",
+						"percentage": "3%",
+						"grade": 88,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 4",
+						"dueDate": "2023-04-26",
+						"percentage": "3%",
+						"grade": 92,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 5",
+						"dueDate": "2023-05-03",
+						"percentage": "3%",
+						"grade": 90,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 6",
+						"dueDate": "2023-05-10",
+						"percentage": "3%",
+						"grade": 85,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 7",
+						"dueDate": "2023-05-17",
+						"percentage": "3%",
+						"grade": 87,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 8",
+						"dueDate": "2023-05-24",
+						"percentage": "3%",
+						"grade": 80,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 9",
+						"dueDate": "2023-06-02",
+						"percentage": "3%",
+						"grade": 88,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 10",
+						"dueDate": "2023-06-09",
+						"percentage": "3%",
+						"grade": 85,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 11",
+						"dueDate": "2023-06-16",
+						"percentage": "3%",
+						"grade": 76,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 12",
+						"dueDate": "2023-06-23",
+						"percentage": "3%",
+						"grade": 63,
+						"type": "Lab"
+					}
+				]
+			}
+		]
+	},
+	{
+		"username": "student11",
+		"password": "password11",
+		"id": "543212222",
+		"name": "Olivia Martinez",
+		"email": "oliviamartinez@example.com",
+		"phone": "5551234567",
+		"courses": [{
+				"name": "Physics",
+				"code": "11158",
+				"year": 2023,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Homework 1",
+						"dueDate": "2023-04-15",
+						"percentage": "4%",
+						"grade": 73,
+						"type": "HW"
+					},
+					{
+						"name": "Homework 2",
+						"dueDate": "2023-04-15",
+						"percentage": "4%",
+						"grade": "Not Graded Yet",
+						"type": "HW"
+					},
+					{
+						"name": "Lab 1",
+						"dueDate": "2023-03-14",
+						"percentage": "3%",
+						"grade": 67,
+						"type": "Lab"
+					}
+				]
+			},
+			{
+				"name": "Data Mining",
+				"code": "61461",
+				"year": 2023,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Homework 1",
+						"dueDate": "2023-04-15",
+						"percentage": "4%",
+						"grade": 72,
+						"type": "HW"
+					},
+					{
+						"name": "Lab 1",
+						"dueDate": "2023-03-14",
+						"percentage": "3%",
+						"grade": 66,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 2",
+						"dueDate": "2023-03-21",
+						"percentage": "3%",
+						"grade": 69,
+						"type": "Lab"
+					}
+				]
+			},
+			{
+				"name": "Compilation",
+				"code": "61763",
+				"year": 2023,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Homework 1",
+						"dueDate": "2023-04-15",
+						"percentage": "4%",
+						"grade": 60,
+						"type": "HW"
+					},
+					{
+						"name": "Homework 2",
+						"dueDate": "2023-05-02",
+						"percentage": "4%",
+						"grade": 74,
+						"type": "HW"
+					}
+				]
+			},
+			{
+				"name": "Cloud Computing",
+				"code": "61773",
+				"year": 2023,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Lab 1",
+						"dueDate": "2023-03-14",
+						"percentage": "3%",
+						"grade": 62,
+						"type": "Lab"
+					},
+					{
+						"name": "Homework 1",
+						"dueDate": "2023-04-15",
+						"percentage": "4%",
+						"grade": 71,
+						"type": "HW"
+					},
+					{
+						"name": "Homework 2",
+						"dueDate": "2023-05-02",
+						"percentage": "4%",
+						"grade": 75,
+						"type": "HW"
+					}
+				]
+			},
+			{
+				"name": "Algorithms",
+				"code": "12345",
+				"year": 2022,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "BFS",
+						"dueDate": "2022-04-15",
+						"percentage": "4%",
+						"grade": 70,
+						"type": "HW"
+					},
+					{
+						"name": "DFS",
+						"dueDate": "2022-05-02",
+						"percentage": "4%",
+						"grade": 64,
+						"type": "HW"
+					},
+					{
+						"name": "Dijkstra",
+						"dueDate": "2022-05-21",
+						"percentage": "4%",
+						"grade": 68,
+						"type": "HW"
+					},
+					{
+						"name": "Bellman Ford",
+						"dueDate": "2022-06-10",
+						"percentage": "4%",
+						"grade": 63,
+						"type": "HW"
+					}
+				]
+			},
+			{
+				"name": "English",
+				"code": "13579",
+				"year": 2022,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Work Interview",
+						"dueDate": "2022-04-10",
+						"percentage": "4%",
+						"grade": 66,
+						"type": "HW"
+					},
+					{
+						"name": "Final Presentation",
+						"dueDate": "2022-06-21",
+						"percentage": "35%",
+						"grade": 73,
+						"type": "HW"
+					}
+				]
+			},
+			{
+				"name": "Object Oriented Programming",
+				"code": "98765",
+				"year": 2022,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Assignment 1",
+						"dueDate": "2022-04-15",
+						"percentage": "4%",
+						"grade": 72,
+						"type": "HW"
+					},
+					{
+						"name": "Assignment 2",
+						"dueDate": "2022-05-03",
+						"percentage": "4%",
+						"grade": 67,
+						"type": "HW"
+					},
+					{
+						"name": "Assignment 3",
+						"dueDate": "2022-05-26",
+						"percentage": "4%",
+						"grade": 70,
+						"type": "HW"
+					},
+					{
+						"name": "Assignment 4",
+						"dueDate": "2022-06-15",
+						"percentage": "4%",
+						"grade": 74,
+						"type": "HW"
+					}
+				]
+			},
+			{
+				"name": "Database Systems",
+				"code": "67890",
+				"year": 2022,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Assignment 1",
+						"dueDate": "2022-04-15",
+						"percentage": "4%",
+						"grade": 68,
+						"type": "HW"
+					},
+					{
+						"name": "Assignment 2",
+						"dueDate": "2022-05-03",
+						"percentage": "4%",
+						"grade": 61,
+						"type": "HW"
+					},
+					{
+						"name": "Assignment 3",
+						"dueDate": "2022-05-26",
+						"percentage": "4%",
+						"grade": 70,
+						"type": "HW"
+					},
+					{
+						"name": "Assignment 4",
+						"dueDate": "2022-06-15",
+						"percentage": "4%",
+						"grade": 72,
+						"type": "HW"
+					}
+				]
+			},
+			{
+				"name": "Operating Systems",
+				"code": "54321",
+				"year": 2022,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Lab 1",
+						"dueDate": "2023-03-14",
+						"percentage": "3%",
+						"grade": 63,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 2",
+						"dueDate": "2023-03-21",
+						"percentage": "3%",
+						"grade": 64,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 3",
+						"dueDate": "2023-03-28",
+						"percentage": "3%",
+						"grade": 67,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 4",
+						"dueDate": "2023-04-26",
+						"percentage": "3%",
+						"grade": 70,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 5",
+						"dueDate": "2023-05-03",
+						"percentage": "3%",
+						"grade": 74,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 6",
+						"dueDate": "2023-05-10",
+						"percentage": "3%",
+						"grade": 75,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 7",
+						"dueDate": "2023-05-17",
+						"percentage": "3%",
+						"grade": 62,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 8",
+						"dueDate": "2023-05-24",
+						"percentage": "3%",
+						"grade": 61,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 9",
+						"dueDate": "2023-06-02",
+						"percentage": "3%",
+						"grade": 64,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 10",
+						"dueDate": "2023-06-09",
+						"percentage": "3%",
+						"grade": 67,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 11",
+						"dueDate": "2023-06-16",
+						"percentage": "3%",
+						"grade": 60,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 12",
+						"dueDate": "2023-06-23",
+						"percentage": "3%",
+						"grade": 73,
+						"type": "Lab"
+					}
+				]
+			}
+		]
+	},
+	{
+		"username": "student12",
+		"password": "password12",
+		"id": "123455555",
+		"name": "Daniel Thompson",
+		"email": "danielthompson@example.com",
+		"phone": "5559876543",
+		"courses": [{
+				"name": "Physics",
+				"code": "11158",
+				"year": 2023,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Homework 1",
+						"dueDate": "2023-04-15",
+						"percentage": "4%",
+						"grade": 50,
+						"type": "HW"
+					},
+					{
+						"name": "Homework 2",
+						"dueDate": "2023-04-15",
+						"percentage": "4%",
+						"grade": "Not Graded Yet",
+						"type": "HW"
+					},
+					{
+						"name": "Lab 1",
+						"dueDate": "2023-03-14",
+						"percentage": "3%",
+						"grade": 55,
+						"type": "Lab"
+					}
+				]
+			},
+			{
+				"name": "Data Mining",
+				"code": "61461",
+				"year": 2023,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Homework 1",
+						"dueDate": "2023-04-15",
+						"percentage": "4%",
+						"grade": 45,
+						"type": "HW"
+					},
+					{
+						"name": "Lab 1",
+						"dueDate": "2023-03-14",
+						"percentage": "3%",
+						"grade": 60,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 2",
+						"dueDate": "2023-03-21",
+						"percentage": "3%",
+						"grade": 58,
+						"type": "Lab"
+					}
+				]
+			},
+			{
+				"name": "Compilation",
+				"code": "61763",
+				"year": 2023,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Homework 1",
+						"dueDate": "2023-04-15",
+						"percentage": "4%",
+						"grade": 62,
+						"type": "HW"
+					},
+					{
+						"name": "Homework 2",
+						"dueDate": "2023-05-02",
+						"percentage": "4%",
+						"grade": 48,
+						"type": "HW"
+					}
+				]
+			},
+			{
+				"name": "Cloud Computing",
+				"code": "61773",
+				"year": 2023,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Lab 1",
+						"dueDate": "2023-03-14",
+						"percentage": "3%",
+						"grade": 56,
+						"type": "Lab"
+					},
+					{
+						"name": "Homework 1",
+						"dueDate": "2023-04-15",
+						"percentage": "4%",
+						"grade": 40,
+						"type": "HW"
+					},
+					{
+						"name": "Homework 2",
+						"dueDate": "2023-05-02",
+						"percentage": "4%",
+						"grade": 65,
+						"type": "HW"
+					}
+				]
+			},
+			{
+				"name": "Algorithms",
+				"code": "12345",
+				"year": 2022,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "BFS",
+						"dueDate": "2022-04-15",
+						"percentage": "4%",
+						"grade": 52,
+						"type": "HW"
+					},
+					{
+						"name": "DFS",
+						"dueDate": "2022-05-02",
+						"percentage": "4%",
+						"grade": 60,
+						"type": "HW"
+					},
+					{
+						"name": "Dijkstra",
+						"dueDate": "2022-05-21",
+						"percentage": "4%",
+						"grade": 58,
+						"type": "HW"
+					},
+					{
+						"name": "Bellman Ford",
+						"dueDate": "2022-06-10",
+						"percentage": "4%",
+						"grade": 43,
+						"type": "HW"
+					}
+				]
+			},
+			{
+				"name": "English",
+				"code": "13579",
+				"year": 2022,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Work Interview",
+						"dueDate": "2022-04-10",
+						"percentage": "4%",
+						"grade": 63,
+						"type": "HW"
+					},
+					{
+						"name": "Final Presentation",
+						"dueDate": "2022-06-21",
+						"percentage": "35%",
+						"grade": 50,
+						"type": "HW"
+					}
+				]
+			},
+			{
+				"name": "Object Oriented Programming",
+				"code": "98765",
+				"year": 2022,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Assignment 1",
+						"dueDate": "2022-04-15",
+						"percentage": "4%",
+						"grade": 46,
+						"type": "HW"
+					},
+					{
+						"name": "Assignment 2",
+						"dueDate": "2022-05-03",
+						"percentage": "4%",
+						"grade": 58,
+						"type": "HW"
+					},
+					{
+						"name": "Assignment 3",
+						"dueDate": "2022-05-26",
+						"percentage": "4%",
+						"grade": 55,
+						"type": "HW"
+					},
+					{
+						"name": "Assignment 4",
+						"dueDate": "2022-06-15",
+						"percentage": "4%",
+						"grade": 42,
+						"type": "HW"
+					}
+				]
+			},
+			{
+				"name": "Database Systems",
+				"code": "67890",
+				"year": 2022,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Assignment 1",
+						"dueDate": "2022-04-15",
+						"percentage": "4%",
+						"grade": 57,
+						"type": "HW"
+					},
+					{
+						"name": "Assignment 2",
+						"dueDate": "2022-05-03",
+						"percentage": "4%",
+						"grade": 44,
+						"type": "HW"
+					},
+					{
+						"name": "Assignment 3",
+						"dueDate": "2022-05-26",
+						"percentage": "4%",
+						"grade": 51,
+						"type": "HW"
+					},
+					{
+						"name": "Assignment 4",
+						"dueDate": "2022-06-15",
+						"percentage": "4%",
+						"grade": 65,
+						"type": "HW"
+					}
+				]
+			},
+			{
+				"name": "Operating Systems",
+				"code": "54321",
+				"year": 2022,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Lab 1",
+						"dueDate": "2023-03-14",
+						"percentage": "3%",
+						"grade": 50,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 2",
+						"dueDate": "2023-03-21",
+						"percentage": "3%",
+						"grade": 55,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 3",
+						"dueDate": "2023-03-28",
+						"percentage": "3%",
+						"grade": 42,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 4",
+						"dueDate": "2023-04-26",
+						"percentage": "3%",
+						"grade": 63,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 5",
+						"dueDate": "2023-05-03",
+						"percentage": "3%",
+						"grade": 46,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 6",
+						"dueDate": "2023-05-10",
+						"percentage": "3%",
+						"grade": 61,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 7",
+						"dueDate": "2023-05-17",
+						"percentage": "3%",
+						"grade": 56,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 8",
+						"dueDate": "2023-05-24",
+						"percentage": "3%",
+						"grade": 48,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 9",
+						"dueDate": "2023-06-02",
+						"percentage": "3%",
+						"grade": 52,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 10",
+						"dueDate": "2023-06-09",
+						"percentage": "3%",
+						"grade": 59,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 11",
+						"dueDate": "2023-06-16",
+						"percentage": "3%",
+						"grade": 40,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 12",
+						"dueDate": "2023-06-23",
+						"percentage": "3%",
+						"grade": 54,
+						"type": "Lab"
+					}
+				]
+			}
+		]
+	},
+	{
+		"username": "student13",
+		"password": "password13",
+		"id": "678908888",
+		"name": "Sophia Williams",
+		"email": "sophiawilliams@example.com",
+		"phone": "5559876543",
+		"courses": [{
+				"name": "Physics",
+				"code": "11158",
+				"year": 2023,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Homework 1",
+						"dueDate": "2023-04-15",
+						"percentage": "4%",
+						"grade": 80,
+						"type": "HW"
+					},
+					{
+						"name": "Homework 2",
+						"dueDate": "2023-04-15",
+						"percentage": "4%",
+						"grade": "Not Graded Yet",
+						"type": "HW"
+					},
+					{
+						"name": "Lab 1",
+						"dueDate": "2023-03-14",
+						"percentage": "3%",
+						"grade": 75,
+						"type": "Lab"
+					}
+				]
+			},
+			{
+				"name": "Data Mining",
+				"code": "61461",
+				"year": 2023,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Homework 1",
+						"dueDate": "2023-04-15",
+						"percentage": "4%",
+						"grade": 70,
+						"type": "HW"
+					},
+					{
+						"name": "Lab 1",
+						"dueDate": "2023-03-14",
+						"percentage": "3%",
+						"grade": 65,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 2",
+						"dueDate": "2023-03-21",
+						"percentage": "3%",
+						"grade": 80,
+						"type": "Lab"
+					}
+				]
+			},
+			{
+				"name": "Compilation",
+				"code": "61763",
+				"year": 2023,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Homework 1",
+						"dueDate": "2023-04-15",
+						"percentage": "4%",
+						"grade": 85,
+						"type": "HW"
+					},
+					{
+						"name": "Homework 2",
+						"dueDate": "2023-05-02",
+						"percentage": "4%",
+						"grade": 60,
+						"type": "HW"
+					}
+				]
+			},
+			{
+				"name": "Cloud Computing",
+				"code": "61773",
+				"year": 2023,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Lab 1",
+						"dueDate": "2023-03-14",
+						"percentage": "3%",
+						"grade": 75,
+						"type": "Lab"
+					},
+					{
+						"name": "Homework 1",
+						"dueDate": "2023-04-15",
+						"percentage": "4%",
+						"grade": 70,
+						"type": "HW"
+					},
+					{
+						"name": "Homework 2",
+						"dueDate": "2023-05-02",
+						"percentage": "4%",
+						"grade": 80,
+						"type": "HW"
+					}
+				]
+			},
+			{
+				"name": "Algorithms",
+				"code": "12345",
+				"year": 2022,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "BFS",
+						"dueDate": "2022-04-15",
+						"percentage": "4%",
+						"grade": 80,
+						"type": "HW"
+					},
+					{
+						"name": "DFS",
+						"dueDate": "2022-05-02",
+						"percentage": "4%",
+						"grade": 85,
+						"type": "HW"
+					},
+					{
+						"name": "Dijkstra",
+						"dueDate": "2022-05-21",
+						"percentage": "4%",
+						"grade": 75,
+						"type": "HW"
+					},
+					{
+						"name": "Bellman Ford",
+						"dueDate": "2022-06-10",
+						"percentage": "4%",
+						"grade": 70,
+						"type": "HW"
+					}
+				]
+			},
+			{
+				"name": "English",
+				"code": "13579",
+				"year": 2022,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Work Interview",
+						"dueDate": "2022-04-10",
+						"percentage": "4%",
+						"grade": 65,
+						"type": "HW"
+					},
+					{
+						"name": "Final Presentation",
+						"dueDate": "2022-06-21",
+						"percentage": "35%",
+						"grade": 80,
+						"type": "HW"
+					}
+				]
+			},
+			{
+				"name": "Object Oriented Programming",
+				"code": "98765",
+				"year": 2022,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Assignment 1",
+						"dueDate": "2022-04-15",
+						"percentage": "4%",
+						"grade": 75,
+						"type": "HW"
+					},
+					{
+						"name": "Assignment 2",
+						"dueDate": "2022-05-03",
+						"percentage": "4%",
+						"grade": 60,
+						"type": "HW"
+					},
+					{
+						"name": "Assignment 3",
+						"dueDate": "2022-05-26",
+						"percentage": "4%",
+						"grade": 70,
+						"type": "HW"
+					},
+					{
+						"name": "Assignment 4",
+						"dueDate": "2022-06-15",
+						"percentage": "4%",
+						"grade": 80,
+						"type": "HW"
+					}
+				]
+			},
+			{
+				"name": "Database Systems",
+				"code": "67890",
+				"year": 2022,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Assignment 1",
+						"dueDate": "2022-04-15",
+						"percentage": "4%",
+						"grade": 65,
+						"type": "HW"
+					},
+					{
+						"name": "Assignment 2",
+						"dueDate": "2022-05-03",
+						"percentage": "4%",
+						"grade": 80,
+						"type": "HW"
+					},
+					{
+						"name": "Assignment 3",
+						"dueDate": "2022-05-26",
+						"percentage": "4%",
+						"grade": 75,
+						"type": "HW"
+					},
+					{
+						"name": "Assignment 4",
+						"dueDate": "2022-06-15",
+						"percentage": "4%",
+						"grade": 70,
+						"type": "HW"
+					}
+				]
+			},
+			{
+				"name": "Operating Systems",
+				"code": "54321",
+				"year": 2022,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Lab 1",
+						"dueDate": "2023-03-14",
+						"percentage": "3%",
+						"grade": 75,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 2",
+						"dueDate": "2023-03-21",
+						"percentage": "3%",
+						"grade": 70,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 3",
+						"dueDate": "2023-03-28",
+						"percentage": "3%",
+						"grade": 80,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 4",
+						"dueDate": "2023-04-26",
+						"percentage": "3%",
+						"grade": 65,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 5",
+						"dueDate": "2023-05-03",
+						"percentage": "3%",
+						"grade": 55,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 6",
+						"dueDate": "2023-05-10",
+						"percentage": "3%",
+						"grade": 85,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 7",
+						"dueDate": "2023-05-17",
+						"percentage": "3%",
+						"grade": 60,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 8",
+						"dueDate": "2023-05-24",
+						"percentage": "3%",
+						"grade": 75,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 9",
+						"dueDate": "2023-06-02",
+						"percentage": "3%",
+						"grade": 70,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 10",
+						"dueDate": "2023-06-09",
+						"percentage": "3%",
+						"grade": 80,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 11",
+						"dueDate": "2023-06-16",
+						"percentage": "3%",
+						"grade": 65,
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 12",
+						"dueDate": "2023-06-23",
+						"percentage": "3%",
+						"grade": 55,
+						"type": "Lab"
+					}
+				]
+			}
+		]
+	}
+
+]

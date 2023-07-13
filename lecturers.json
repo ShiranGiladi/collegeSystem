@@ -1,0 +1,234 @@
+[
+  {
+    "username": "lecturer1",
+    "password": "password1",
+    "id": "111111111",
+    "name": "Jon Jon",
+    "email": "lecturer1@exmple.com",
+    "phone": "1258479658",
+    "courses": [{
+		"name": "Mathematics",
+		"code": "5555",
+		"tasks": []
+	},
+	{
+ 		"name": "Physics",
+		"code": "11158",
+		"tasks": [{
+						"name": "Homework 1",
+						"dueDate": "2023-04-15",
+						"percentage": "4%",
+						"type": "HW"
+					},
+					{
+						"name": "Homework 2",
+						"dueDate": "2023-04-15",
+						"percentage": "4%",
+						"type": "HW"
+					},
+					{
+						"name": "Lab 1",
+						"dueDate": "2023-03-14",
+						"percentage": "3%",
+						"type": "Lab"
+					}
+		]}
+   ]
+  },
+  {
+    "username": "lecturer2",
+    "password": "password2",
+    "id": "222222222",
+    "name": "Amit Amit",
+    "email": "lecturer2@exmple.com",
+    "phone": "7584692588",
+    "courses": [{
+			"name": "Computer Science",
+			"code": "44444",
+			"tasks": []
+		},
+		{
+ 			"name": "Data Mining",
+			"code": "61461",
+				"tasks": [{
+						"name": "Homework 1",
+						"dueDate": "2023-04-15",
+						"percentage": "4%",
+						"type": "HW"
+					},
+					{
+						"name": "Lab 1",
+						"dueDate": "2023-03-14",
+						"percentage": "3%",
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 2",
+						"dueDate": "2023-03-21",
+						"percentage": "3%",
+						"type": "Lab"
+					}
+				]
+			}
+		]
+  },
+  {
+    "username": "lecturer3",
+    "password": "password3",
+    "id": "333333333",
+    "name": "Hana Hana",
+    "email": "lecturer3@exmple.com",
+    "phone": "4474854789",
+    "courses": [{
+			"name": "Compilation",
+				"code": "61763",
+				"tasks": [{
+						"name": "Homework 1",
+						"dueDate": "2023-04-15",
+						"percentage": "4%",
+						"type": "HW"
+					},
+					{
+						"name": "Homework 2",
+						"dueDate": "2023-05-02",
+						"percentage": "4%",
+						"type": "HW"
+					}
+				]
+		},
+ 		{
+			"name": "Computer Science",
+			"code": "44444",
+			"tasks": []
+		}
+		]
+  },
+  {
+    "username": "lecturer4",
+    "password": "password4",
+    "id": "444444444",
+    "name": "Will Will",
+    "email": "lecturer4@exmple.com",
+    "phone": "8885541125",
+    "courses": [{
+		"name": "Cloud Computing",
+				"code": "61773",
+				"tasks": [{
+						"name": "Lab 1",
+						"dueDate": "2023-03-14",
+						"percentage": "3%",
+						"type": "Lab"
+					},
+					{
+						"name": "Homework 1",
+						"dueDate": "2023-04-15",
+						"percentage": "4%",
+						"type": "HW"
+					},
+					{
+						"name": "Homework 2",
+						"dueDate": "2023-05-02",
+						"percentage": "4%",
+						"type": "HW"
+					}
+				]
+			}, 
+		{
+			"name": "AI",
+			"code": "33333",
+			"tasks": []
+		}
+		]
+  },
+  {
+    "username": "lecturer5",
+    "password": "password5",
+    "id": "555555555",
+    "name": "Sara Sara",
+    "email": "lecturer5@exmple.com",
+    "phone": "9998885632",
+    "courses": [{
+		"name": "Cloud Computing",
+				"code": "61773",
+				"tasks": [{
+						"name": "Lab 1",
+						"dueDate": "2023-03-14",
+						"percentage": "3%",
+						"type": "Lab"
+					},
+					{
+						"name": "Homework 1",
+						"dueDate": "2023-04-15",
+						"percentage": "4%",
+						"type": "HW"
+					},
+					{
+						"name": "Homework 2",
+						"dueDate": "2023-05-02",
+						"percentage": "4%",
+						"type": "HW"
+					}
+				]
+			},
+		{
+ 			"name": "Data Mining",
+			"code": "61461",
+				"tasks": [{
+						"name": "Homework 1",
+						"dueDate": "2023-04-15",
+						"percentage": "4%",
+						"type": "HW"
+					},
+					{
+						"name": "Lab 1",
+						"dueDate": "2023-03-14",
+						"percentage": "3%",
+						"type": "Lab"
+					},
+					{
+						"name": "Lab 2",
+						"dueDate": "2023-03-21",
+						"percentage": "3%",
+						"type": "Lab"
+					}
+				]
+		}
+		]
+  },
+  {
+    "username": "lecturer6",
+    "password": "password6",
+    "id": "666666666",
+    "name": "Noa Noa",
+    "email": "lecturer6@exmple.com",
+    "phone": "1122336655",
+    "courses": [{
+				"name": "Physics",
+				"code": "11158",
+				"year": 2023,
+				"semester": "Spring",
+				"tasks": [{
+						"name": "Homework 1",
+						"dueDate": "2023-04-15",
+						"percentage": "4%",
+						"grade": 95,
+						"type": "HW"
+					},
+					{
+						"name": "Homework 2",
+						"dueDate": "2023-04-15",
+						"percentage": "4%",
+						"grade": "Not Graded Yet",
+						"type": "HW"
+					},
+					{
+						"name": "Lab 1",
+						"dueDate": "2023-03-14",
+						"percentage": "3%",
+						"grade": 85,
+						"type": "Lab"
+					}
+				]
+			}]
+  }
+]
