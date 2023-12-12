@@ -1,6 +1,6 @@
 # collegeSystem
 
-Last semester, my partner and I developed a web application - a College Grade System for students, lecturers, and administrators. I would like to share the project and its key features with you.
+During my studies, my partner and I developed a web application - a College Grade System for students, lecturers, and administrators. I would like to share the project and its key features with you.
 
 🚀 Project Overview:
 Our application was built using cutting-edge technologies, including React, Node.js, Express, Bootstrap, and MongoDB.
